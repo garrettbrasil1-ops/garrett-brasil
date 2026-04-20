@@ -1,0 +1,874 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garrett Brasil | Detectores de Metal Originais — Distribuidora Oficial</title>
+  <meta name="description" content="Garrett Brasil — distribuidora oficial de detectores de metal. ACE 200i, ACE Apex, AT Pro, AT Gold, AXIOM, Super Scanner V, PD 6500i e muito mais. Garantia de fábrica, 12x sem juros, entrega para todo o Brasil." />
+  <meta name="keywords" content="detector de metal, garrett, ACE apex, AT pro, axiom, detector de ouro, segurança, portal detector, super scanner, detector brasil" />
+  <link rel="canonical" href="https://garrettbrasil.com.br" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Garrett Brasil | Detectores de Metal Originais" />
+  <meta property="og:description" content="Distribuidora oficial Garrett no Brasil. Produtos 100% originais com garantia de fábrica, 12x sem juros e entrega para todo o Brasil." />
+  <meta property="og:url" content="https://garrettbrasil.com.br" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ========================================================
+     HEADER
+     ======================================================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="nav__logo-img">
+      </a>
+
+      <div class="nav__links">
+        <div class="nav__link nav__link--dropdown">
+          Produtos <i class="fa-solid fa-chevron-down" style="font-size:0.65rem"></i>
+          <div class="nav__dropdown">
+            <a href="sport.html">Detectores Sport</a>
+            <a href="seguranca.html">Segurança</a>
+            <a href="acessorios.html">Acessórios</a>
+          </div>
+        </div>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__search-btn" id="searchToggle" title="Buscar produto">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" class="nav__cta">
+          <i class="fa-brands fa-whatsapp"></i> Comprar
+        </a>
+        <button class="nav__hamburger" id="hamburger" title="Menu">
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar" id="searchBar">
+  <div class="search-bar__inner">
+    <input type="text" class="search-bar__input" id="searchInput" placeholder="Buscar produto (ex: ACE Apex, detector de ouro, portal…)" autocomplete="off" />
+    <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html"><i class="fa-solid fa-house" style="width:18px"></i> Início</a>
+  <div class="nav__mobile-parent">
+    <div class="nav__mobile-toggle" id="mobileDropToggle">
+      <span><i class="fa-solid fa-box" style="width:18px"></i> Produtos</span>
+      <i class="fa-solid fa-chevron-down" style="font-size:0.7rem"></i>
+    </div>
+    <div class="nav__mobile-submenu" id="mobileDropMenu">
+      <a href="sport.html">Detectores Sport</a>
+      <a href="seguranca.html">Segurança</a>
+      <a href="acessorios.html">Acessórios</a>
+    </div>
+  </div>
+  <a href="#sobre"><i class="fa-solid fa-circle-info" style="width:18px"></i> Sobre</a>
+  <a href="#contato"><i class="fa-solid fa-envelope" style="width:18px"></i> Contato</a>
+  <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" style="color:#25d366">
+    <i class="fa-brands fa-whatsapp" style="width:18px"></i> WhatsApp
+  </a>
+</div>
+
+<!-- ========================================================
+     HERO — VÍDEO
+     ======================================================== -->
+<section class="hero" id="hero">
+  <div class="hero__video-wrap">
+    <video class="hero__video" autoplay muted loop playsinline preload="metadata"
+           poster="imagem/ace-apex-left-side.jpg">
+      <source src="video/product-focus.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__video-overlay"></div>
+  </div>
+
+  <div class="container hero__content">
+    <div class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      Distribuidora Oficial Garrett no Brasil
+    </div>
+    <h1 class="hero__title">Detectores de Metal<br /><span>100% Originais</span></h1>
+    <p class="hero__desc">Da caça ao tesouro à segurança de alto nível — a linha completa Garrett com garantia de fábrica, suporte em português e entrega para todo o Brasil.</p>
+    <div class="hero__actions">
+      <a href="sport.html" class="btn btn--gold"><i class="fa-solid fa-compass"></i> Ver Detectores Sport</a>
+      <a href="seguranca.html" class="btn btn--teal"><i class="fa-solid fa-shield-halved"></i> Ver Segurança</a>
+      <a href="https://wa.me/5561991793626?text=Olá! Gostaria de saber mais sobre os detectores Garrett." class="btn btn--wa" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Falar com Especialista
+      </a>
+    </div>
+    <div class="hero__trust">
+      <div class="hero__trust-item"><i class="fa-solid fa-medal"></i> +60 Anos de Tecnologia</div>
+      <div class="hero__trust-item"><i class="fa-solid fa-shield-halved"></i> Garantia de Fábrica</div>
+      <div class="hero__trust-item"><i class="fa-solid fa-credit-card"></i> 12x Sem Juros</div>
+      <div class="hero__trust-item"><i class="fa-solid fa-truck-fast"></i> Entrega para Todo o Brasil</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>EXPLORAR</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ========================================================
+     STATS BAR
+     ======================================================== -->
+<section class="stats">
+  <div class="container stats__grid">
+    <div class="stats__item">
+      <div class="stats__number">+60 Anos</div>
+      <div class="stats__label">de Tecnologia Garrett</div>
+    </div>
+    <div class="stats__item">
+      <div class="stats__number">+150 Países</div>
+      <div class="stats__label">Atendidos no Mundo</div>
+    </div>
+    <div class="stats__item">
+      <div class="stats__number">12x Sem Juros</div>
+      <div class="stats__label">no Cartão de Crédito</div>
+    </div>
+    <div class="stats__item">
+      <div class="stats__number">100% Original</div>
+      <div class="stats__label">com Garantia de Fábrica</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CATEGORIAS
+     ======================================================== -->
+<section class="categories" id="categorias">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Nossos Produtos</span>
+      <h2 class="section__title">Escolha sua Linha Garrett</h2>
+      <p class="section__desc">Produtos 100% originais para cada necessidade — do iniciante ao profissional</p>
+    </div>
+    <div class="cat-grid">
+
+      <a href="sport.html" class="cat-card">
+        <div class="cat-card__img-wrap">
+          <img src="imagem/ace-apex-left-side.jpg" alt="Linha Sport Garrett" loading="lazy" />
+        </div>
+        <div class="cat-card__body">
+          <span class="cat-card__tag cat-card__tag--sport">Sport &amp; Hobby</span>
+          <h3 class="cat-card__title">Detectores Sport</h3>
+          <p class="cat-card__desc">ACE Series, AT Series, AXIOM e Goldmaster — do iniciante ao garimpeiro profissional. A partir de R$ 1.095.</p>
+          <span class="cat-card__link">Ver Produtos <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a href="seguranca.html" class="cat-card">
+        <div class="cat-card__img-wrap">
+          <img src="imagem/super-scanner-v-1.jpg" alt="Linha Segurança Garrett" loading="lazy" />
+        </div>
+        <div class="cat-card__body">
+          <span class="cat-card__tag cat-card__tag--security">Segurança Institucional</span>
+          <h3 class="cat-card__title">Detectores de Segurança</h3>
+          <p class="cat-card__desc">Pórticos PD 6500i, Multi Zone, Paragon e detectores hand-held Super Scanner V e SuperWand. Certificados internacionalmente.</p>
+          <span class="cat-card__link">Ver Produtos <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <a href="acessorios.html" class="cat-card">
+        <div class="cat-card__img-wrap">
+          <img src="imagem/pro-pointer-at-light.jpg" alt="Acessórios Garrett" loading="lazy" />
+        </div>
+        <div class="cat-card__body">
+          <span class="cat-card__tag cat-card__tag--accessories">Acessórios Originais</span>
+          <h3 class="cat-card__title">Acessórios Garrett</h3>
+          <p class="cat-card__desc">Pinpointers Pro-Pointer, bobinas de busca, fones wireless Z-Lynk e equipamentos para garimpo. A partir de R$ 125.</p>
+          <span class="cat-card__link">Ver Produtos <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     PRODUTOS EM DESTAQUE
+     ======================================================== -->
+<section class="products" id="produtos">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Mais Procurados</span>
+      <h2 class="section__title">Produtos em Destaque</h2>
+      <p class="section__desc">Os detectores mais vendidos com as melhores condições de pagamento</p>
+    </div>
+
+    <div class="prod-tabs">
+      <button class="prod-tab active" data-tab="sport">Sport</button>
+      <button class="prod-tab" data-tab="security">Segurança</button>
+      <button class="prod-tab" data-tab="gold">Ouro</button>
+      <button class="prod-tab" data-tab="acessorio">Acessórios</button>
+    </div>
+
+    <div class="products__grid" id="productsGrid">
+
+      <!-- ===== SPORT ===== -->
+      <div class="prod-card" data-category="sport"
+           data-keywords="ace 200i detector hobby iniciante terrestre ace series">
+        <div class="prod-card__img">
+          <img src="imagem/ace-200i-1.jpg" alt="Detector de Metal ACE 200i" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--new">Mais Acessível</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · ACE Series</span>
+          <h3 class="prod-card__name">Detector ACE 200i</h3>
+          <p class="prod-card__desc">5 modos de busca, discriminação eletrônica e display gráfico. Ideal para começar no hobby com qualidade Garrett.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__old">De R$ 1.930</div>
+            <div class="prod-card__new">R$ 1.095</div>
+            <div class="prod-card__parcel">ou 12x de R$ 91,25 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="sport.html#ace200i" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o ACE 200i — R$ 1.095" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-category="sport"
+           data-keywords="ace apex detector multi frequência multi-flex avançado sport">
+        <div class="prod-card__img">
+          <img src="imagem/ace-apex-right-angle.jpg" alt="Detector de Metal ACE Apex" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--hot">🔥 Mais Vendido</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · ACE Series</span>
+          <h3 class="prod-card__name">Detector ACE Apex</h3>
+          <p class="prod-card__desc">Tecnologia Multi-Flex™ de frequência múltipla simultânea. Máxima profundidade e precisão em qualquer tipo de solo.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__old">De R$ 4.325</div>
+            <div class="prod-card__new">R$ 2.580</div>
+            <div class="prod-card__parcel">ou 12x de R$ 215,00 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="sport.html#aceapex" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o ACE Apex — R$ 2.580" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-category="sport"
+           data-keywords="at max detector submersível wireless z-lynk waterproof at series">
+        <div class="prod-card__img">
+          <img src="imagem/at-max-1.jpg" alt="Detector de Metal AT Max" loading="lazy" />
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · AT Series</span>
+          <h3 class="prod-card__name">Detector AT Max</h3>
+          <p class="prod-card__desc">Z-Lynk wireless integrado, submersível até 3m. O mais completo e versátil da série AT para campo, rios e praias.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__old">De R$ 5.380</div>
+            <div class="prod-card__new">R$ 3.413</div>
+            <div class="prod-card__parcel">ou 12x de R$ 284,42 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="sport.html#atmax" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o AT Max — R$ 3.413" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== SECURITY ===== -->
+      <div class="prod-card prod-card--hidden" data-category="security"
+           data-keywords="super scanner v detector manual portátil segurança handheld nij ecac">
+        <div class="prod-card__img">
+          <img src="imagem/super-scanner-v-1.jpg" alt="Super Scanner V" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--hot">Referência Mundial</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Hand-Held</span>
+          <h3 class="prod-card__name">Super Scanner V</h3>
+          <p class="prod-card__desc">O detector manual mais reconhecido do mundo. Certificado NIJ-0602.02, STAC e ECAC. Padrão para aeroportos e eventos globais.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__new">R$ 2.105</div>
+            <div class="prod-card__parcel">ou 12x de R$ 175,42 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="seguranca.html#superscanner" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o Super Scanner V — R$ 2.105" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--hidden" data-category="security"
+           data-keywords="superwand detector vareta portátil segurança handheld nij ecac aeroporto">
+        <div class="prod-card__img">
+          <img src="imagem/super-wand-1.jpg" alt="SuperWand" loading="lazy" />
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Hand-Held</span>
+          <h3 class="prod-card__name">SuperWand</h3>
+          <p class="prod-card__desc">Design slim em vareta com detecção 360° e interruptor 3 vias. Certificado NIJ e ECAC — ideal para operações de alto fluxo.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__new">R$ 2.283</div>
+            <div class="prod-card__parcel">ou 12x de R$ 190,25 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="seguranca.html#superwand" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o SuperWand — R$ 2.283" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--hidden" data-category="security"
+           data-keywords="pd 6500i portal detector pórtico walk-through 33 zonas aeroporto tsa dhs ecac">
+        <div class="prod-card__img">
+          <img src="imagem/pd-6500i-1.jpg" alt="Portal PD 6500i" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--new">Cert. TSA / DHS</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Portal Walk-Through</span>
+          <h3 class="prod-card__name">Pórtico PD 6500i</h3>
+          <p class="prod-card__desc">33 zonas independentes de detecção com alarme bilateral exclusivo. Certificado TSA, DHS, ECAC e STAC. Referência mundial para aeroportos.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__consulta"><i class="fa-solid fa-phone"></i> Sob Consulta</div>
+            <div class="prod-card__parcel">Entre em contato para proposta comercial</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="seguranca.html#pd6500i" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero uma proposta para o Portal PD 6500i" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== GOLD ===== -->
+      <div class="prod-card prod-card--hidden" data-category="gold"
+           data-keywords="axiom detector ouro garimpo pepita pulso indução profissional solo mineralizado">
+        <div class="prod-card__img">
+          <img src="imagem/axiom-1.jpg" alt="Detector de Ouro AXIOM" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--hot">Top Ouro</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Prospecção de Ouro</span>
+          <h3 class="prod-card__name">Detector de Ouro AXIOM</h3>
+          <p class="prod-card__desc">Pulso de Indução com compensação automática de solo. Detecta pepitas minúsculas onde outros detectores falham completamente.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__old">De R$ 26.232</div>
+            <div class="prod-card__new">R$ 21.187</div>
+            <div class="prod-card__parcel">ou 12x de R$ 1.765,58 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="sport.html#axiom" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o AXIOM — R$ 21.187" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--hidden" data-category="gold"
+           data-keywords="at gold detector ouro submersível frequência 18khz rio garimpo at series">
+        <div class="prod-card__img">
+          <img src="imagem/at-gold-1.jpg" alt="Detector AT Gold" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · AT Series</span>
+          <h3 class="prod-card__name">Detector AT Gold</h3>
+          <p class="prod-card__desc">Frequência de 18 kHz otimizada para ouro nativo. Submersível até 3m — perfeito para garimpo em rios e solos altamente mineralizados.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__old">De R$ 6.135</div>
+            <div class="prod-card__new">R$ 4.323</div>
+            <div class="prod-card__parcel">ou 12x de R$ 360,25 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="sport.html#atgold" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o AT Gold — R$ 4.323" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--hidden" data-category="gold"
+           data-keywords="goldmaster 24k detector ouro pepita alta frequência garimpo profissional">
+        <div class="prod-card__img">
+          <img src="imagem/goldmaster-24k-left-angle.jpg" alt="Goldmaster 24K" loading="lazy" />
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Prospecção de Ouro</span>
+          <h3 class="prod-card__name">Goldmaster 24K</h3>
+          <p class="prod-card__desc">Altíssima frequência de 48 kHz para detectar as menores pepitas de ouro. Para garimpeiros experientes que exigem máxima precisão.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__new">R$ 6.906</div>
+            <div class="prod-card__parcel">ou 12x de R$ 575,50 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="sport.html#goldmaster" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o Goldmaster 24K — R$ 6.906" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== ACESSÓRIOS ===== -->
+      <div class="prod-card prod-card--hidden" data-category="acessorio"
+           data-keywords="pro-pointer at pinpointer localizador submersível detector ponteiro">
+        <div class="prod-card__img">
+          <img src="imagem/pro-pointer-at-diver.jpg" alt="Pro-Pointer AT" loading="lazy" />
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Pinpointer</span>
+          <h3 class="prod-card__name">Pro-Pointer AT</h3>
+          <p class="prod-card__desc">Pinpointer submersível até 3m com LED e alarme vibratório. Localiza com precisão exata o alvo identificado pelo detector.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__new">R$ 1.411</div>
+            <div class="prod-card__parcel">ou 12x de R$ 117,58 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="acessorios.html" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o Pro-Pointer AT — R$ 1.411" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--hidden" data-category="acessorio"
+           data-keywords="pro-pointer at z-lynk pinpointer wireless z-link sem fio">
+        <div class="prod-card__img">
+          <img src="imagem/pro-pointer-at-zlynk-1.jpg" alt="Pro-Pointer AT Z-LYNK" loading="lazy" />
+          <div class="prod-card__badges">
+            <span class="prod-card__badge prod-card__badge--new">Wireless</span>
+          </div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Pinpointer</span>
+          <h3 class="prod-card__name">Pro-Pointer AT Z-LYNK</h3>
+          <p class="prod-card__desc">Versão wireless Z-Lynk para transmissão direta ao fone de ouvido. Submersível, com LED e vibração — latência abaixo de 1 ms.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__new">R$ 1.650</div>
+            <div class="prod-card__parcel">ou 12x de R$ 137,50 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="acessorios.html" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar o Pro-Pointer AT Z-LYNK — R$ 1.650" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="prod-card prod-card--hidden" data-category="acessorio"
+           data-keywords="bobina 11x14 dd ace apex coil search coil acessório">
+        <div class="prod-card__img">
+          <img src="imagem/ace-apex-multifrequency.jpg" alt="Bobina 11X14 DD ACE Apex" loading="lazy" />
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Garrett · Bobina</span>
+          <h3 class="prod-card__name">Bobina 11×14 DD ACE Apex</h3>
+          <p class="prod-card__desc">Bobina Raider DD com suporte Multi-Flex™ para o ACE Apex. Maior cobertura de área e profundidade superior por varrida.</p>
+          <div class="prod-card__pricing">
+            <div class="prod-card__new">R$ 2.098</div>
+            <div class="prod-card__parcel">ou 12x de R$ 174,83 sem juros</div>
+          </div>
+        </div>
+        <div class="prod-card__actions">
+          <a href="acessorios.html" class="btn btn--outline btn--sm">Detalhes</a>
+          <a href="https://wa.me/5561991793626?text=Quero comprar a Bobina 11X14 DD ACE Apex — R$ 2.098" class="btn btn--wa btn--sm" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /products__grid -->
+
+    <div style="text-align:center; margin-top:40px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+      <a href="sport.html" class="btn btn--gold"><i class="fa-solid fa-compass"></i> Ver Linha Sport Completa</a>
+      <a href="seguranca.html" class="btn btn--teal"><i class="fa-solid fa-shield-halved"></i> Ver Linha Segurança</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SOBRE
+     ======================================================== -->
+<section class="section section--alt" id="sobre">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Quem Somos</span>
+      <h2 class="section__title">Distribuidora Oficial Garrett no Brasil</h2>
+      <p class="section__desc">Representação exclusiva Garrett Electronics USA — produtos 100% originais com importação direta, nota fiscal e suporte técnico especializado.</p>
+    </div>
+    <div class="benefits__grid">
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-certificate"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Importação Direta e Oficial</h3>
+          <p class="benefit-item__desc">Produtos importados diretamente da Garrett Electronics USA com toda a documentação, certificação e nota fiscal para o Brasil.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Equipe Técnica Especializada</h3>
+          <p class="benefit-item__desc">Profissionais treinados pela Garrett para orientar na escolha correta, uso técnico e manutenção de cada equipamento. Suporte em português.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-globe"></i></div>
+        <div>
+          <h3 class="benefit-item__title">+60 Anos de Tecnologia Garrett</h3>
+          <p class="benefit-item__desc">A Garrett Electronics, fundada em 1964, é líder mundial em detecção de metais — com produtos presentes em mais de 150 países.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     BENEFÍCIOS
+     ======================================================== -->
+<section class="benefits" id="beneficios">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Por que Garrett Brasil?</span>
+      <h2 class="section__title">Vantagens de Comprar com a Garrett Brasil</h2>
+      <p class="section__desc">Segurança, garantia e suporte em cada etapa da sua compra</p>
+    </div>
+    <div class="benefits__grid">
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Entrega para Todo o Brasil</h3>
+          <p class="benefit-item__desc">Enviamos para qualquer estado com rastreamento completo. Prazo e frete calculados no momento do pedido.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Garantia de Fábrica</h3>
+          <p class="benefit-item__desc">Todos os produtos com garantia oficial Garrett. Assistência técnica autorizada para todo o Brasil.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-credit-card"></i></div>
+        <div>
+          <h3 class="benefit-item__title">12x Sem Juros</h3>
+          <p class="benefit-item__desc">Parcele em até 12x sem juros no cartão de crédito. Aceitamos também Pix, boleto e transferência bancária.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Atendimento em Português</h3>
+          <p class="benefit-item__desc">Equipe brasileira disponível via WhatsApp, e-mail e telefone. Especialistas que conhecem cada produto em profundidade.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-certificate"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Produto 100% Original</h3>
+          <p class="benefit-item__desc">Importação direta com nota fiscal. Apenas produtos originais Garrett Electronics USA — sem paralelos ou imitações.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item__icon"><i class="fa-solid fa-comments"></i></div>
+        <div>
+          <h3 class="benefit-item__title">Consultoria Técnica Gratuita</h3>
+          <p class="benefit-item__desc">Ajudamos você a escolher o detector ideal para seu objetivo, perfil e orçamento — sem custo e sem compromisso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     DEPOIMENTOS
+     ======================================================== -->
+<section class="testimonials" id="depoimentos">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Avaliações Verificadas</span>
+      <h2 class="section__title">O que nossos clientes dizem</h2>
+      <p class="section__desc">Experiências reais de compradores que escolheram a Garrett Brasil</p>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-card__stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-card__quote">Comprei o ACE Apex e fiquei impressionado com a qualidade. Chegou rápido, embalado com cuidado e o produto é incrível. Já encontrei várias moedas antigas na primeira semana de uso!</p>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">M</div>
+          <div>
+            <div class="testi-card__name">Marcos Oliveira</div>
+            <div class="testi-card__location">São Paulo, SP</div>
+            <div class="testi-card__product">ACE Apex</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-card__stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-card__quote">Usamos os portais PD 6500i em nosso evento corporativo. Montagem fácil, funcionamento impecável. O atendimento da Garrett Brasil foi excepcional do início ao fim.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">A</div>
+          <div>
+            <div class="testi-card__name">Ana Beatriz Souza</div>
+            <div class="testi-card__location">Rio de Janeiro, RJ</div>
+            <div class="testi-card__product">PD 6500i</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-card__stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p class="testi-card__quote">Garimpeiro há 12 anos. O AXIOM mudou minha vida. Encontrei ouro em garimpos onde eu trabalhava há anos sem detectar nada. Vale absolutamente cada centavo investido.</p>
+        <div class="testi-card__author">
+          <div class="testi-card__avatar">R</div>
+          <div>
+            <div class="testi-card__name">Roberto Farias</div>
+            <div class="testi-card__location">Pará, PA</div>
+            <div class="testi-card__product">AXIOM</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CTA BANNER
+     ======================================================== -->
+<section class="cta-banner">
+  <div class="container cta-banner__inner">
+    <div class="cta-banner__text">
+      <span class="cta-banner__label">Consultoria Gratuita</span>
+      <h2 class="cta-banner__title">Pronto para encontrar seu detector ideal?</h2>
+      <p class="cta-banner__desc">Fale agora com nosso especialista e receba uma consultoria personalizada e gratuita para escolher o equipamento certo para você.</p>
+    </div>
+    <div class="cta-banner__actions">
+      <a href="https://wa.me/5561991793626?text=Olá! Gostaria de uma consultoria gratuita sobre detectores Garrett." class="btn btn--gold" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp Agora
+      </a>
+      <a href="mailto:info@garrettbrasil.com.br" class="btn btn--outline">
+        <i class="fa-solid fa-envelope"></i> Enviar E-mail
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CONTATO
+     ======================================================== -->
+<section class="contact" id="contato">
+  <div class="container">
+    <div class="section__header">
+      <span class="section__label">Fale Conosco</span>
+      <h2 class="section__title">Entre em Contato</h2>
+      <p class="section__desc">Nossa equipe responde em até 2 horas úteis — Seg–Sex, 9h às 18h</p>
+    </div>
+    <div class="contact__grid">
+
+      <div>
+        <h3 class="contact__info-title">Canais de Atendimento</h3>
+        <p class="contact__info-desc">Atendimento personalizado por WhatsApp, e-mail ou formulário. Especialistas prontos para ajudar você a escolher, comprar e usar seu detector Garrett.</p>
+        <div class="contact__channels">
+          <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" class="contact__channel">
+            <div class="contact__channel-icon contact__channel-icon--wa">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <div class="contact__channel-label">WhatsApp</div>
+              <div class="contact__channel-value">+55 (61) 99179-3626</div>
+            </div>
+          </a>
+          <a href="mailto:info@garrettbrasil.com.br" class="contact__channel">
+            <div class="contact__channel-icon contact__channel-icon--mail">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact__channel-label">E-mail</div>
+              <div class="contact__channel-value">info@garrettbrasil.com.br</div>
+            </div>
+          </a>
+          <div class="contact__channel">
+            <div class="contact__channel-icon contact__channel-icon--map">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="contact__channel-label">Localização</div>
+              <div class="contact__channel-value">Brasília — DF, Brasil</div>
+            </div>
+          </div>
+          <div class="contact__channel">
+            <div class="contact__channel-icon contact__channel-icon--map">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <div class="contact__channel-label">Horário de Atendimento</div>
+              <div class="contact__channel-value">Seg–Sex, 9h às 18h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contatoForm">
+        <h4 class="contact__form-title">Enviar Mensagem</h4>
+        <div class="form__row">
+          <div class="form__group">
+            <label class="form__label">Nome</label>
+            <input type="text" class="form__input" placeholder="Seu nome completo" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label">E-mail</label>
+            <input type="email" class="form__input" placeholder="Seu e-mail" required />
+          </div>
+        </div>
+        <div class="form__group">
+          <label class="form__label">Produto de Interesse</label>
+          <input type="text" class="form__input" placeholder="Ex: ACE Apex, AT Max, PD 6500i..." />
+        </div>
+        <div class="form__group">
+          <label class="form__label">Mensagem</label>
+          <textarea class="form__textarea" rows="5" placeholder="Sua mensagem, dúvida ou pedido de cotação..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold">Enviar Mensagem <i class="fa-solid fa-paper-plane"></i></button>
+        <div class="form__feedback form__feedback--success" id="formFeedback" style="display:none">
+          <i class="fa-solid fa-check-circle"></i> Mensagem enviada com sucesso! Retornaremos em breve.
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Distribuidora oficial Garrett no Brasil. Detectores de metal para esporte, segurança e garimpo — com garantia de fábrica, importação direta e suporte em português.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Linha Sport</h4>
+        <div class="footer__links">
+          <a href="sport.html#ace200i">ACE 200i — R$ 1.095</a>
+          <a href="sport.html#ace300i">ACE 300i — R$ 1.621</a>
+          <a href="sport.html#aceapex">ACE Apex — R$ 2.580</a>
+          <a href="sport.html#atmax">AT Max — R$ 3.413</a>
+          <a href="sport.html#axiom">AXIOM — R$ 21.187</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Segurança</h4>
+        <div class="footer__links">
+          <a href="seguranca.html#superscanner">Super Scanner V</a>
+          <a href="seguranca.html#superwand">SuperWand</a>
+          <a href="seguranca.html#pd6500i">PD 6500i</a>
+          <a href="seguranca.html#multizone">Multi Zone</a>
+          <a href="seguranca.html#paragon">Paragon</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <div class="footer__contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span><a href="https://wa.me/5561991793626" target="_blank" rel="noopener">+55 (61) 99179-3626</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:info@garrettbrasil.com.br">info@garrettbrasil.com.br</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Brasília — DF, Brasil</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Seg–Sex, 9h às 18h</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Garrett Brasil. Todos os direitos reservados. Distribuidora Oficial Garrett Electronics USA.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5561991793626?text=Olá! Vim pelo site e gostaria de saber mais sobre os detectores Garrett." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <div class="whatsapp-float__label">
+    Comprar Agora
+    <small>Resposta rápida</small>
+  </div>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

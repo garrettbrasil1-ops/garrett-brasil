@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detectores Sport — Garrett Brasil | Distribuidora Oficial</title>
+  <meta name="description" content="Detectores de metal Garrett para esporte e lazer: linha ACE, AT Series, detectores de ouro AXIOM e Goldmaster 24K. Distribuidora oficial no Brasil." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========================================================
+     HEADER
+     ======================================================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="nav__logo-img">
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Início</a>
+        <div class="nav__link nav__link--dropdown active">
+          Produtos <i class="fa-solid fa-chevron-down" style="font-size:0.65rem"></i>
+          <div class="nav__dropdown">
+            <a href="sport.html">Detectores Sport</a>
+            <a href="seguranca.html">Segurança</a>
+            <a href="acessorios.html">Acessórios</a>
+          </div>
+        </div>
+        <a href="index.html#sobre" class="nav__link">Sobre</a>
+        <a href="index.html#contato" class="nav__link">Contato</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__search-btn" id="searchToggle" title="Buscar produto">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" class="nav__cta">
+          <i class="fa-brands fa-whatsapp"></i> Fale Conosco
+        </a>
+        <button class="nav__hamburger" id="hamburger" title="Menu">
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar" id="searchBar">
+  <div class="search-bar__inner">
+    <input type="text" class="search-bar__input" id="searchInput" placeholder="Buscar detectores, acessórios, bobinas..." autocomplete="off" />
+    <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html"><i class="fa-solid fa-house" style="width:18px"></i> Início</a>
+  <div class="nav__mobile-parent">
+    <div class="nav__mobile-toggle" id="mobileDropToggle">
+      <span><i class="fa-solid fa-box" style="width:18px"></i> Produtos</span>
+      <i class="fa-solid fa-chevron-down" style="font-size:0.7rem"></i>
+    </div>
+    <div class="nav__mobile-submenu" id="mobileDropMenu">
+      <a href="sport.html">Detectores Sport</a>
+      <a href="seguranca.html">Segurança</a>
+      <a href="acessorios.html">Acessórios</a>
+    </div>
+  </div>
+  <a href="index.html#sobre"><i class="fa-solid fa-circle-info" style="width:18px"></i> Sobre</a>
+  <a href="index.html#contato"><i class="fa-solid fa-envelope" style="width:18px"></i> Contato</a>
+  <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" style="color:#25d366">
+    <i class="fa-brands fa-whatsapp" style="width:18px"></i> WhatsApp
+  </a>
+</div>
+
+<!-- ========================================================
+     PAGE HERO
+     ======================================================== -->
+<section class="page-hero page-hero--sport">
+  <div class="container">
+    <div class="page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb__sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="breadcrumb__current">Detectores Sport</span>
+      </nav>
+      <span class="page-hero__label">Linha Esportiva &amp; Hobby</span>
+      <h1 class="page-hero__title">Detectores de Metal <span>Garrett Sport</span></h1>
+      <p class="page-hero__desc">Da série ACE ideal para iniciantes ao AXIOM profissional para garimpo de ouro — encontre o detector perfeito para cada aventura. Todos com garantia oficial e suporte técnico no Brasil.</p>
+      <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20detectores%20sport%20Garrett." target="_blank" rel="noopener" class="btn btn--wa">
+        <i class="fa-brands fa-whatsapp"></i> Consultar via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     QUICK FILTERS
+     ======================================================== -->
+<div class="quick-filters">
+  <div class="container">
+    <div class="quick-filters__inner">
+      <span class="quick-filters__label">Filtros:</span>
+      <a href="#ace-series" class="qf-btn"><i class="fa-solid fa-bolt"></i> ACE Series</a>
+      <a href="#at-series"  class="qf-btn"><i class="fa-solid fa-water"></i> AT Series</a>
+      <a href="#ouro"       class="qf-btn"><i class="fa-solid fa-gem"></i> Prospecção de Ouro</a>
+      <a href="#acessorios-sport" class="qf-btn"><i class="fa-solid fa-screwdriver-wrench"></i> Acessórios</a>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================
+     PAGE LAYOUT (sidebar + products)
+     ======================================================== -->
+<div class="container">
+  <div class="page-layout">
+
+    <!-- ---- SIDEBAR ---- -->
+    <aside class="sidebar">
+
+      <div class="sidebar__widget">
+        <div class="sidebar__widget-head">
+          <span class="sidebar__widget-title">Linha / Série</span>
+        </div>
+        <div class="sidebar__widget-body">
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>ACE Series</span>
+            <span class="sidebar__check-count">4</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>AT Series</span>
+            <span class="sidebar__check-count">3</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Prospecção de Ouro</span>
+            <span class="sidebar__check-count">2</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Acessórios / Pinpointers</span>
+            <span class="sidebar__check-count">3</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar__widget">
+        <div class="sidebar__widget-head">
+          <span class="sidebar__widget-title">Disponibilidade</span>
+        </div>
+        <div class="sidebar__widget-body">
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Em Estoque</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" /> <span>Sob Encomenda / Esgotado</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar__widget">
+        <div class="sidebar__widget-head">
+          <span class="sidebar__widget-title">Aplicação</span>
+        </div>
+        <div class="sidebar__widget-body">
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Terrestre</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Submersível / Aquático</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Garimpo de Ouro</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Iniciante / Hobby</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Profissional / Avançado</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar__widget sidebar__widget--promo">
+        <div class="sidebar__widget-body">
+          <div class="sidebar__promo-icon">💬</div>
+          <div class="sidebar__promo-title">Precisa de ajuda para escolher?</div>
+          <p class="sidebar__promo-desc">Nossos especialistas ajudam você a escolher o detector ideal para o seu perfil e objetivo.</p>
+          <a href="https://wa.me/5561991793626?text=Olá!%20Preciso%20de%20ajuda%20para%20escolher%20um%20detector%20Garrett." target="_blank" rel="noopener" class="sidebar__promo-btn">
+            <i class="fa-brands fa-whatsapp"></i> Falar com Especialista
+          </a>
+        </div>
+      </div>
+
+    </aside>
+    <!-- /sidebar -->
+
+    <!-- ---- PRODUCTS AREA ---- -->
+    <main class="products-area">
+
+      <!-- ======================================================
+           ACE SERIES
+           ====================================================== -->
+      <section class="products-section" id="ace-series">
+        <span class="section-anchor" id="ace-series-anchor"></span>
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-bolt"></i> ACE Series</h2>
+            <p class="products-section-desc">Ideal para iniciantes e entusiastas — tecnologia Garrett em pacote acessível</p>
+          </div>
+          <span class="products-section-count">4 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- ACE 200i -->
+          <div class="prod-card reveal" id="ace200i">
+            <div class="prod-card__img">
+              <img src="imagem/ace-200i-1.jpg" alt="Detector de Metal Garrett ACE 200i" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">ACE 200i</h3>
+              <p class="prod-card__desc">Detector de entrada perfeito para iniciantes. 5 modos de operação pré-definidos, discriminação de metais e profundidade de detecção de até 20 cm. Leve e fácil de usar.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 1.930</div>
+                <div class="prod-card__new">R$ 1.095</div>
+                <div class="prod-card__parcel">ou 12x de R$ 91,25 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Detector%20Garrett%20ACE%20200i%20por%20R%24%201.095.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/ace-200i.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+          <!-- ACE 300i -->
+          <div class="prod-card reveal reveal-delay-1" id="ace300i">
+            <div class="prod-card__img">
+              <img src="imagem/ace-300i-1.jpg" alt="Detector de Metal Garrett ACE 300i" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">ACE 300i</h3>
+              <p class="prod-card__desc">Versão intermediária da série ACE com 8 segmentos de discriminação visual, 3 frequências de operação e haste ajustável. Excelente custo-benefício para hobbyistas.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 1.962</div>
+                <div class="prod-card__new">R$ 1.621</div>
+                <div class="prod-card__parcel">ou 12x de R$ 135,08 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Detector%20Garrett%20ACE%20300i%20por%20R%24%201.621.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/ace-300i.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+          <!-- ACE 400i -->
+          <div class="prod-card reveal reveal-delay-2" id="ace400i">
+            <div class="prod-card__img">
+              <img src="imagem/ace-400i-1.jpg" alt="Detector de Metal Garrett ACE 400i" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--hot">Mais Vendido</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">ACE 400i</h3>
+              <p class="prod-card__desc">O topo da linha ACE. Frequência de 10 kHz otimizada para todos os tipos de metais, 12 segmentos de discriminação, display de profundidade e alta sensibilidade em solos mineralizados.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 2.271</div>
+                <div class="prod-card__new">R$ 1.870</div>
+                <div class="prod-card__parcel">ou 12x de R$ 155,83 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Detector%20Garrett%20ACE%20400i%20por%20R%24%201.870.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/ace-400i.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+          <!-- ACE Apex -->
+          <div class="prod-card reveal reveal-delay-3" id="aceapex">
+            <div class="prod-card__img">
+              <img src="imagem/ace-apex-right-angle.jpg" alt="Detector de Metal Garrett ACE Apex" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--hot">Destaque</span>
+                <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">ACE Apex</h3>
+              <p class="prod-card__desc">O mais avançado da linha ACE com tecnologia Multi-Flex™ de multifrequência simultânea. Detecta mais profundo com maior precisão em qualquer tipo de solo, compatível com fones wireless Z-Lynk.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 4.325</div>
+                <div class="prod-card__new">R$ 2.580</div>
+                <div class="prod-card__parcel">ou 12x de R$ 215,00 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Detector%20Garrett%20ACE%20Apex%20por%20R%24%202.580.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/ace-apex.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+      </section>
+      <!-- /ACE SERIES -->
+
+      <!-- ======================================================
+           AT SERIES
+           ====================================================== -->
+      <section class="products-section" id="at-series">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-water"></i> AT Series</h2>
+            <p class="products-section-desc">Detectores totalmente submersíveis — para uso em rios, praias e solos alagados</p>
+          </div>
+          <span class="products-section-count">3 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- AT Pro -->
+          <div class="prod-card reveal" id="atpro">
+            <div class="prod-card__img">
+              <img src="imagem/at-pro-1.jpg" alt="Detector de Metal Garrett AT Pro" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">AT Pro</h3>
+              <p class="prod-card__desc">Clássico e premiado detector submersível até 3 metros. Frequência de 15 kHz, modo Pro Audio para máxima leitura de sinais e compatível com todos os acessórios da série AT.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 7.800</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Garrett%20AT%20Pro." target="_blank" rel="noopener" class="btn btn--teal btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+          <!-- AT Gold -->
+          <div class="prod-card reveal reveal-delay-1" id="atgold">
+            <div class="prod-card__img">
+              <img src="imagem/at-gold-1.jpg" alt="Detector de Metal Garrett AT Gold" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">AT Gold</h3>
+              <p class="prod-card__desc">Especialista em ouro nativo com frequência de 18 kHz e submersão total até 3 metros. Detecta pepitas e objetos dourados em locais onde outros detectores não conseguem.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 6.135</div>
+                <div class="prod-card__new">R$ 4.323</div>
+                <div class="prod-card__parcel">ou 12x de R$ 360,25 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Detector%20Garrett%20AT%20Gold%20por%20R%24%204.323.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/at-gold.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+          <!-- AT Max -->
+          <div class="prod-card reveal reveal-delay-2" id="atmax">
+            <div class="prod-card__img">
+              <img src="imagem/at-max-1.jpg" alt="Detector de Metal Garrett AT Max" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--hot">Mais Vendido</span>
+                <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">AT Max</h3>
+              <p class="prod-card__desc">O mais avançado da série AT. Frequência de 13,6 kHz, sistema wireless Z-Lynk integrado para fones sem fio com latência quase zero. Submersível até 3 metros.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 5.380</div>
+                <div class="prod-card__new">R$ 3.413</div>
+                <div class="prod-card__parcel">ou 12x de R$ 284,42 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Detector%20Garrett%20AT%20Max%20por%20R%24%203.413.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/at-max.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+      </section>
+      <!-- /AT SERIES -->
+
+      <!-- ======================================================
+           VORTEX SERIES
+           ====================================================== -->
+      <section class="products-section" id="vortex-series">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-layer-group"></i> Vortex Series</h2>
+            <p class="products-section-desc">Nova geração de detectores multifrequência — totalmente submersíveis e atualizáveis via software</p>
+          </div>
+          <span class="products-section-count">1 produto</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- Vortex -->
+          <div class="prod-card reveal" id="vortex">
+            <div class="prod-card__img">
+              <img src="imagem/vortex-vx7-right.png" alt="Garrett Vortex VX7 — Detector de Metal Multifrequência" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--hot">Novo</span>
+                <span class="prod-card__badge prod-card__badge--new">Multi-Flex™</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Vortex</h3>
+              <p class="prod-card__desc">Nova série multifrequência simultânea da Garrett — completamente submersível a 3 metros (detector + bobina), wireless Z-Lynk integrado e software atualizável. Disponível nos modelos VX5, VX7 e VX9.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__consulta"><i class="fa-solid fa-tag"></i> Consulte disponibilidade</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Garrett%20Vortex.%20Gostaria%20de%20saber%20preço%20e%20disponibilidade." target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Consultar
+              </a>
+              <a href="produtos/vortex.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+      </section>
+      <!-- /VORTEX SERIES -->
+
+      <!-- ======================================================
+           PROSPECÇÃO DE OURO
+           ====================================================== -->
+      <section class="products-section" id="ouro">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-gem"></i> Prospecção de Ouro</h2>
+            <p class="products-section-desc">Detectores de alta performance para garimpo de pepitas de ouro nativo</p>
+          </div>
+          <span class="products-section-count">2 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- AXIOM -->
+          <div class="prod-card reveal" id="axiom">
+            <div class="prod-card__img">
+              <img src="imagem/axiom-1.jpg" alt="Garrett AXIOM Detector de Ouro" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--hot">Premium</span>
+                <span class="prod-card__badge prod-card__badge--sale">Oferta</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">AXIOM</h3>
+              <p class="prod-card__desc">Detector de ouro de última geração com tecnologia de pulso de indução e 3 frequências de operação (7, 14 e 20 kHz). Detecta pepitas minúsculas em solos altamente mineralizados onde outros detectores falham.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__old">De R$ 26.232</div>
+                <div class="prod-card__new">R$ 21.187</div>
+                <div class="prod-card__parcel">ou 12x de R$ 1.765,58 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Garrett%20AXIOM%20por%20R%24%2021.187.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/axiom.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+          <!-- Goldmaster 24K -->
+          <div class="prod-card reveal reveal-delay-1" id="goldmaster">
+            <div class="prod-card__img">
+              <img src="imagem/goldmaster-24k-left-angle.jpg" alt="Garrett Goldmaster 24K" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--new">Alta Frequência</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Goldmaster 24K</h3>
+              <p class="prod-card__desc">Opera na altíssima frequência de 48 kHz, ideal para detectar pepitas muito pequenas de ouro. Controles simples e precisos, bobina de 9 polegadas inclusa e design ergonômico para longas jornadas no garimpo.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 6.906</div>
+                <div class="prod-card__parcel">ou 12x de R$ 575,50 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Garrett%20Goldmaster%2024K%20por%20R%24%206.906.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+              <a href="produtos/goldmaster-24k.html" class="btn btn--outline btn--sm">
+                <i class="fa-solid fa-circle-info"></i> Ver Página
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+      </section>
+      <!-- /OURO -->
+
+      <!-- ======================================================
+           ACESSÓRIOS SPORT
+           ====================================================== -->
+      <section class="products-section" id="acessorios-sport">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Acessórios Sport</h2>
+            <p class="products-section-desc">Pinpointers Garrett para localização precisa do metal detectado</p>
+          </div>
+          <span class="products-section-count">3 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- Pro-Pointer AT -->
+          <div class="prod-card reveal" id="propointerat">
+            <div class="prod-card__img">
+              <img src="imagem/pro-pointer-at-diver.jpg" alt="Garrett Pro-Pointer AT" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Pro-Pointer AT</h3>
+              <p class="prod-card__desc">Pinpointer submersível até 3 metros com 3 modos de sensibilidade, vibração + alerta sonoro e LED de iluminação. Compatível com todos os detectores AT Series.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 1.411</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Pro-Pointer%20AT." target="_blank" rel="noopener" class="btn btn--teal btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+          <!-- Pro-Pointer AT Z-LYNK -->
+          <div class="prod-card reveal reveal-delay-1" id="propolynk">
+            <div class="prod-card__img">
+              <img src="imagem/pro-pointer-at-zlynk-1.jpg" alt="Garrett Pro-Pointer AT Z-LYNK" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Pro-Pointer AT Z-LYNK</h3>
+              <p class="prod-card__desc">Versão wireless do Pro-Pointer AT com tecnologia Z-Lynk para comunicação sem fio com detectores compatíveis. Submersível, vibração + áudio e LED integrado.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 1.650</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Pro-Pointer%20AT%20Z-LYNK." target="_blank" rel="noopener" class="btn btn--teal btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+          <!-- Pro-Pointer II -->
+          <div class="prod-card reveal reveal-delay-2" id="propointer2">
+            <div class="prod-card__img">
+              <img src="imagem/pro-pointer-ii-1.jpg" alt="Garrett Pro-Pointer II" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Pro-Pointer II</h3>
+              <p class="prod-card__desc">O pinpointer mais popular do mundo. Detetor de bolso com sensibilidade automática, alerta sonoro + vibração, LED de iluminação e clip de cinto incluído. Resistente a respingos.</p>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 1.681</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Pro-Pointer%20II." target="_blank" rel="noopener" class="btn btn--teal btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+      </section>
+      <!-- /ACESSÓRIOS SPORT -->
+
+    </main>
+    <!-- /products-area -->
+
+  </div><!-- /page-layout -->
+</div><!-- /container -->
+
+<!-- ========================================================
+     CTA BANNER
+     ======================================================== -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner__inner">
+      <div class="cta-banner__text">
+        <span class="cta-banner__label">Distribuidora Oficial Garrett</span>
+        <h2 class="cta-banner__title">Garantia Original &amp; Suporte Técnico no Brasil</h2>
+        <p class="cta-banner__desc">Todos os produtos com nota fiscal, garantia de fábrica e suporte técnico especializado em Brasília-DF.</p>
+      </div>
+      <div class="cta-banner__actions">
+        <a href="https://wa.me/5561991793626?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20detectores%20Garrett." target="_blank" rel="noopener" class="btn btn--gold">
+          <i class="fa-brands fa-whatsapp"></i> Falar com Especialista
+        </a>
+        <a href="mailto:info@garrettbrasil.com.br" class="btn btn--outline">
+          <i class="fa-solid fa-envelope"></i> Enviar E-mail
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Distribuidora oficial Garrett no Brasil. Detectores de metal para esporte, segurança e garimpo com garantia e suporte técnico.</p>
+        <div class="footer__social">
+          <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/5561991793626" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Produtos</h4>
+        <div class="footer__links">
+          <a href="sport.html#ace-series">ACE Series</a>
+          <a href="sport.html#at-series">AT Series</a>
+          <a href="sport.html#ouro">Prospecção de Ouro</a>
+          <a href="seguranca.html#portais">Pórticos Walk-Through</a>
+          <a href="seguranca.html#handheld">Detectores Hand-Held</a>
+          <a href="acessorios.html#bobinas">Bobinas</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Empresa</h4>
+        <div class="footer__links">
+          <a href="index.html#sobre">Sobre Nós</a>
+          <a href="index.html#beneficios">Por que Garrett Brasil?</a>
+          <a href="index.html#depoimentos">Depoimentos</a>
+          <a href="index.html#contato">Contato</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <div class="footer__contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span><a href="https://wa.me/5561991793626" target="_blank" rel="noopener">+55 (61) 99179-3626</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:info@garrettbrasil.com.br">info@garrettbrasil.com.br</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <span>garret.brasil</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Brasília — DF, Brasil</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Garrett Brasil. Distribuidora oficial Garrett no Brasil. Todos os direitos reservados.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5561991793626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20detectores%20Garrett." target="_blank" rel="noopener" class="whatsapp-float" title="Falar via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <div class="whatsapp-float__label">
+    Fale Conosco
+    <small>Resposta rápida</small>
+  </div>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

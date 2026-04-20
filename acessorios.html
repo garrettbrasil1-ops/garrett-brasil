@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acessórios Garrett — Pinpointers, Bobinas e Equipamentos de Garimpo | Garrett Brasil</title>
+  <meta name="description" content="Acessórios originais Garrett: pinpointers Pro-Pointer, bobinas de busca para ACE e AT Series, bateia e peneira para garimpo. Distribuidora oficial no Brasil." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========================================================
+     HEADER
+     ======================================================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="nav__logo-img">
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Início</a>
+        <div class="nav__link nav__link--dropdown active">
+          Produtos <i class="fa-solid fa-chevron-down" style="font-size:0.65rem"></i>
+          <div class="nav__dropdown">
+            <a href="sport.html">Detectores Sport</a>
+            <a href="seguranca.html">Segurança</a>
+            <a href="acessorios.html">Acessórios</a>
+          </div>
+        </div>
+        <a href="index.html#sobre" class="nav__link">Sobre</a>
+        <a href="index.html#contato" class="nav__link">Contato</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__search-btn" id="searchToggle" title="Buscar produto">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" class="nav__cta">
+          <i class="fa-brands fa-whatsapp"></i> Fale Conosco
+        </a>
+        <button class="nav__hamburger" id="hamburger" title="Menu">
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar" id="searchBar">
+  <div class="search-bar__inner">
+    <input type="text" class="search-bar__input" id="searchInput" placeholder="Buscar pinpointers, bobinas, acessórios..." autocomplete="off" />
+    <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html"><i class="fa-solid fa-house" style="width:18px"></i> Início</a>
+  <div class="nav__mobile-parent">
+    <div class="nav__mobile-toggle" id="mobileDropToggle">
+      <span><i class="fa-solid fa-box" style="width:18px"></i> Produtos</span>
+      <i class="fa-solid fa-chevron-down" style="font-size:0.7rem"></i>
+    </div>
+    <div class="nav__mobile-submenu" id="mobileDropMenu">
+      <a href="sport.html">Detectores Sport</a>
+      <a href="seguranca.html">Segurança</a>
+      <a href="acessorios.html">Acessórios</a>
+    </div>
+  </div>
+  <a href="index.html#sobre"><i class="fa-solid fa-circle-info" style="width:18px"></i> Sobre</a>
+  <a href="index.html#contato"><i class="fa-solid fa-envelope" style="width:18px"></i> Contato</a>
+  <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" style="color:#25d366">
+    <i class="fa-brands fa-whatsapp" style="width:18px"></i> WhatsApp
+  </a>
+</div>
+
+<!-- ========================================================
+     PAGE HERO
+     ======================================================== -->
+<section class="page-hero page-hero--acessorios">
+  <div class="container">
+    <div class="page-hero__content">
+      <nav class="breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb__sep"><i class="fa-solid fa-chevron-right"></i></span>
+        <span class="breadcrumb__current">Acessórios</span>
+      </nav>
+      <span class="page-hero__label">Acessórios Originais Garrett</span>
+      <h1 class="page-hero__title">Acessórios <span>Garrett Originais</span></h1>
+      <p class="page-hero__desc">Pinpointers para localização precisa, bobinas de busca para maior profundidade e alcance, e equipamentos para garimpo. Todos 100% originais Garrett com garantia no Brasil.</p>
+      <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20acessórios%20Garrett." target="_blank" rel="noopener" class="btn btn--wa">
+        <i class="fa-brands fa-whatsapp"></i> Consultar via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     QUICK FILTERS
+     ======================================================== -->
+<div class="quick-filters">
+  <div class="container">
+    <div class="quick-filters__inner">
+      <span class="quick-filters__label">Filtros:</span>
+      <a href="#pinpointers" class="qf-btn"><i class="fa-solid fa-location-crosshairs"></i> Pinpointers</a>
+      <a href="#bobinas"     class="qf-btn"><i class="fa-solid fa-circle-dot"></i> Bobinas</a>
+      <a href="#garimpo"     class="qf-btn"><i class="fa-solid fa-gem"></i> Garimpo</a>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================
+     PAGE LAYOUT
+     ======================================================== -->
+<div class="container">
+  <div class="page-layout">
+
+    <!-- ---- SIDEBAR ---- -->
+    <aside class="sidebar">
+
+      <div class="sidebar__widget">
+        <div class="sidebar__widget-head">
+          <span class="sidebar__widget-title">Categoria</span>
+        </div>
+        <div class="sidebar__widget-body">
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Pinpointers</span>
+            <span class="sidebar__check-count">3</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Bobinas de Busca</span>
+            <span class="sidebar__check-count">10</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Equipamentos de Garimpo</span>
+            <span class="sidebar__check-count">2</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar__widget">
+        <div class="sidebar__widget-head">
+          <span class="sidebar__widget-title">Compatibilidade</span>
+        </div>
+        <div class="sidebar__widget-body">
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Série ACE</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Série AT</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>ACE Apex</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>ATX</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Universal</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar__widget">
+        <div class="sidebar__widget-head">
+          <span class="sidebar__widget-title">Disponibilidade</span>
+        </div>
+        <div class="sidebar__widget-body">
+          <label class="sidebar__check">
+            <input type="checkbox" checked /> <span>Em Estoque</span>
+          </label>
+          <label class="sidebar__check">
+            <input type="checkbox" /> <span>Esgotado / Encomenda</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="sidebar__widget sidebar__widget--promo">
+        <div class="sidebar__widget-body">
+          <div class="sidebar__promo-icon">🎯</div>
+          <div class="sidebar__promo-title">Qual bobina combina com meu detector?</div>
+          <p class="sidebar__promo-desc">Consulte nosso especialista e descubra a bobina ideal para ampliar o desempenho do seu detector Garrett.</p>
+          <a href="https://wa.me/5561991793626?text=Olá!%20Preciso%20de%20ajuda%20para%20escolher%20a%20bobina%20certa%20para%20meu%20detector%20Garrett." target="_blank" rel="noopener" class="sidebar__promo-btn">
+            <i class="fa-brands fa-whatsapp"></i> Perguntar ao Especialista
+          </a>
+        </div>
+      </div>
+
+    </aside>
+    <!-- /sidebar -->
+
+    <!-- ---- PRODUCTS AREA ---- -->
+    <main class="products-area">
+
+      <!-- ======================================================
+           PINPOINTERS
+           ====================================================== -->
+      <section class="products-section" id="pinpointers">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-location-crosshairs"></i> Pinpointers</h2>
+            <p class="products-section-desc">Detectores de ponteiro para localização precisa do objeto após a detecção</p>
+          </div>
+          <span class="products-section-count">3 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- Pro-Pointer AT -->
+          <div class="prod-card reveal">
+            <div class="prod-card__img">
+              <img src="imagem/pro-pointer-at-diver.jpg" alt="Garrett Pro-Pointer AT" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Pro-Pointer AT</h3>
+              <p class="prod-card__desc">Pinpointer totalmente submersível até 3 metros. 3 níveis de sensibilidade, alarme sonoro + vibração, LED de iluminação traseiro e resistência a quedas. O mais vendido da Garrett.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Submersível até 3 metros</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> 3 níveis de sensibilidade</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Vibração + alarme sonoro + LED</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 1.411</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Pro-Pointer%20AT." target="_blank" rel="noopener" class="btn btn--teal btn--sm" data-prod-url="produtos/pro-pointer-at.html">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+          <!-- Pro-Pointer AT Z-LYNK -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-card__img">
+              <img src="imagem/pro-pointer-at-zlynk-1.jpg" alt="Garrett Pro-Pointer AT Z-LYNK" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Pro-Pointer AT Z-LYNK</h3>
+              <p class="prod-card__desc">Pinpointer wireless com tecnologia Z-Lynk para conectar automaticamente ao detector AT Max ou ACE Apex. Submersível, vibração + áudio. O sinal do pinpointer chega instantaneamente no fone de ouvido.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Wireless Z-Lynk integrado</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Submersível até 3 metros</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Latência inferior a 1 ms</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 1.650</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Pro-Pointer%20AT%20Z-LYNK." target="_blank" rel="noopener" class="btn btn--teal btn--sm" data-prod-url="produtos/pro-pointer-at-zlynk.html">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+          <!-- Pro-Pointer II -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-card__img">
+              <img src="imagem/pro-pointer-ii-1.jpg" alt="Garrett Pro-Pointer II" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--out">Esgotado</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Pro-Pointer II</h3>
+              <p class="prod-card__desc">O pinpointer mais famoso do mundo. Sensibilidade automática, alarme sonoro + vibração, LED de iluminação, clip de cinto e resistência a respingos. Compatível com todos os detectores.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Sensibilidade automática</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Vibração + alarme sonoro</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Clip de cinto incluso</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__esgotado"><i class="fa-solid fa-circle-xmark"></i> Produto Esgotado</div>
+                <div class="prod-card__old" style="margin-top:4px">R$ 1.681</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20saber%20a%20previsão%20de%20reposição%20do%20Pro-Pointer%20II." target="_blank" rel="noopener" class="btn btn--teal btn--sm" data-prod-url="produtos/pro-pointer-ii.html">
+                <i class="fa-brands fa-whatsapp"></i> Avisar quando disponível
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid -->
+      </section>
+      <!-- /PINPOINTERS -->
+
+      <!-- ======================================================
+           BOBINAS
+           ====================================================== -->
+      <section class="products-section" id="bobinas">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-circle-dot"></i> Bobinas de Busca</h2>
+            <p class="products-section-desc">Bobinas originais Garrett para ampliar profundidade, sensibilidade e área de cobertura</p>
+          </div>
+          <span class="products-section-count">10 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- Bobina 5x8 DD Serie AT -->
+          <div class="prod-card reveal">
+            <div class="prod-card__img">
+              <img src="imagem/at-pro-1.jpg" alt="Bobina 5x8 DD Serie AT Garrett" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 5×8 DD Série AT</h3>
+              <p class="prod-card__desc">Bobina DD de tamanho intermediário para a série AT. Ideal para áreas com muito ferro e minerais. Excelente penetração em solos difíceis com boa cobertura lateral.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: AT Pro / AT Gold / AT Max</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Tecnologia DD (Double-D)</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 1.473</div>
+                <div class="prod-card__parcel">ou 12x de R$ 122,75 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%205x8%20DD%20Série%20AT%20por%20R%24%201.473.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 8,5x11 DD ACE -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-card__img">
+              <img src="imagem/ace-apex-coil-raider.png" alt="Bobina 8,5x11 DD para Serie ACE" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 8,5×11 DD Série ACE</h3>
+              <p class="prod-card__desc">Bobina DD para a série ACE com maior área de varredura que a original. Maior profundidade de detecção e melhor desempenho em solos mineralizados e com interferências.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: ACE 200i / 300i / 400i</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Tecnologia DD — maior penetração</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 1.184</div>
+                <div class="prod-card__parcel">ou 12x de R$ 98,67 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%208.5x11%20DD%20para%20Série%20ACE%20por%20R%24%201.184.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 8,5x11 DD AT -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-card__img">
+              <img src="imagem/at-pro-2.jpg" alt="Bobina 8,5x11 DD Serie AT" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 8,5×11 DD Série AT</h3>
+              <p class="prod-card__desc">Bobina DD grande para os detectores AT Series. Maior cobertura de área por passagem e melhor profundidade em campo aberto. Perfeita para grandes terrenos e praias.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: AT Pro / AT Gold / AT Max</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Submersível junto com o detector</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 1.569</div>
+                <div class="prod-card__parcel">ou 12x de R$ 130,75 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%208.5x11%20DD%20Série%20AT%20por%20R%24%201.569.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 9x12 CC ACE -->
+          <div class="prod-card reveal">
+            <div class="prod-card__img">
+              <img src="imagem/ace-400i-1.jpg" alt="Bobina 9x12 CC Serie ACE" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 9×12 CC Série ACE</h3>
+              <p class="prod-card__desc">Bobina concêntrica de tamanho maior para detectores ACE. Melhor para solos com baixa mineralização e busca de objetos maiores e mais profundos. Maior área de varredura por passagem.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: ACE 200i / 300i / 400i</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Tecnologia Concêntrica (CC)</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 1.184</div>
+                <div class="prod-card__parcel">ou 12x de R$ 98,67 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%209x12%20CC%20Série%20ACE%20por%20R%24%201.184.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 11X13 DD ATX -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-card__img">
+              <img src="imagem/axiom-1.jpg" alt="Bobina 11X13 DD Para Detector ATX" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 11×13 DD Para ATX</h3>
+              <p class="prod-card__desc">Bobina DD de grande porte para o detector ATX de pulso de indução. Ideal para garimpo em solos altamente mineralizados com máxima profundidade de detecção.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: Garrett ATX</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Tecnologia DD — solos difíceis</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 2.366</div>
+                <div class="prod-card__parcel">ou 12x de R$ 197,17 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%2011x13%20DD%20para%20ATX%20por%20R%24%202.366.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 11X13 Mono ATX -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-card__img">
+              <img src="imagem/at-gold-1.jpg" alt="Bobina 11X13 Mono Fechada para ATX" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 11×13 Mono Fechada ATX</h3>
+              <p class="prod-card__desc">Bobina monoloop fechada para ATX com excelente profundidade de detecção em solos abertos. Mais sensível a objetos pequenos comparada às bobinas DD de mesmo tamanho.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: Garrett ATX</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Alta sensibilidade a objetos pequenos</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 2.507</div>
+                <div class="prod-card__parcel">ou 12x de R$ 208,92 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%2011x13%20Mono%20para%20ATX%20por%20R%24%202.507.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 11X14 DD ACE Apex -->
+          <div class="prod-card reveal">
+            <div class="prod-card__img">
+              <img src="imagem/ace-apex-multifrequency.jpg" alt="Bobina 11X14 DD ACE Apex" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 11×14 DD ACE Apex</h3>
+              <p class="prod-card__desc">Bobina Raider DD para o ACE Apex com tecnologia Multi-Flex™. Maior área de cobertura para detectar mais profundo e em maior área por passagem. Compatível com todos os modos multi-frequência do Apex.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: ACE Apex</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Suporte Multi-Flex™ multifrequência</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 2.098</div>
+                <div class="prod-card__parcel">ou 12x de R$ 174,83 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%2011x14%20DD%20ACE%20Apex%20por%20R%24%202.098.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 8 Mono ATX -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-card__img">
+              <img src="imagem/axiom-1.jpg" alt="Bobina 8 Mono Para Detector ATX" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 8" Mono Para ATX</h3>
+              <p class="prod-card__desc">Bobina monoloop de 8 polegadas para o ATX. Mais compacta para trabalho em áreas apertadas e garimpo em rios. Alta sensibilidade a pepitas pequenas de ouro nativo.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: Garrett ATX</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Ideal para áreas rochosas e rios</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 5.819</div>
+                <div class="prod-card__parcel">ou 12x de R$ 484,92 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%208%20Mono%20para%20ATX%20por%20R%24%205.819.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Bobina 10x12 DD ATX -->
+          <div class="prod-card reveal reveal-delay-2">
+            <div class="prod-card__img">
+              <img src="imagem/at-max-1.jpg" alt="Bobina 10x12 DD ATX" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bobina 10×12 DD ATX</h3>
+              <p class="prod-card__desc">Bobina DD de 10x12 polegadas para o ATX. Equilíbrio perfeito entre cobertura e sensibilidade para garimpo profissional. Superior em solos altamente mineralizados.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Compatível: Garrett ATX</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Alta performance em solos ricos</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 5.828</div>
+                <div class="prod-card__parcel">ou 12x de R$ 485,67 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bobina%2010x12%20DD%20para%20ATX%20por%20R%24%205.828.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Protetor de Bobina -->
+          <div class="prod-card reveal">
+            <div class="prod-card__img">
+              <img src="imagem/ace-apex-coil-cover.jpg" alt="Protetor de Bobina Garrett 6.5x9" loading="lazy" />
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Protetor de Bobina 6,5×9</h3>
+              <p class="prod-card__desc">Capa protetora de plástico resistente para proteger a bobina de batidas, arranhões e desgaste durante o uso em campo. Prolonga a vida útil da bobina original.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Encaixe perfeito na bobina</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Plástico resistente a impactos</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 186</div>
+                <div class="prod-card__parcel">ou 12x de R$ 15,50 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20no%20Protetor%20de%20Bobina%206.5x9%20por%20R%24%20186.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid bobinas -->
+      </section>
+      <!-- /BOBINAS -->
+
+      <!-- ======================================================
+           GARIMPO
+           ====================================================== -->
+      <section class="products-section" id="garimpo">
+        <div class="products-section-header">
+          <div>
+            <h2 class="products-section-title"><i class="fa-solid fa-gem"></i> Equipamentos de Garimpo</h2>
+            <p class="products-section-desc">Bateia e peneira Garrett para classificação de sedimentos e concentração de ouro</p>
+          </div>
+          <span class="products-section-count">2 produtos</span>
+        </div>
+
+        <div class="products__grid--page">
+
+          <!-- Bateia 15 Super Sluice -->
+          <div class="prod-card reveal">
+            <div class="prod-card__img">
+              <img src="imagem/at-gold-1.jpg" alt="Garrett Bateia 15 Super Sluice" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--new">Garimpo</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Bateia 15" Super Sluice</h3>
+              <p class="prod-card__desc">Bateia de 15 polegadas com fundo acanalado tipo sluice para concentrar partículas de ouro e outros minerais pesados. Plástico resistente, leve e de alta durabilidade para uso intenso no garimpo.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> 15 polegadas de diâmetro</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Fundo acanalado para concentração</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Plástico resistente e leve</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 208</div>
+                <div class="prod-card__parcel">ou 6x de R$ 34,67 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Bateia%2015%20Super%20Sluice%20por%20R%24%20208.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+          <!-- Peneira para Garimpo 14 -->
+          <div class="prod-card reveal reveal-delay-1">
+            <div class="prod-card__img">
+              <img src="imagem/goldmaster-24k-left-angle.jpg" alt="Peneira para Garimpo Garrett 14 Sifter" loading="lazy" />
+              <div class="prod-card__badges">
+                <span class="prod-card__badge prod-card__badge--new">Garimpo</span>
+              </div>
+            </div>
+            <div class="prod-card__body">
+              <span class="prod-card__brand">Garrett</span>
+              <h3 class="prod-card__name">Peneira para Garimpo 14" Garrett Sifter</h3>
+              <p class="prod-card__desc">Peneira classificadora de 14 polegadas para garimpo e pesquisa de ouro. Malha resistente para classificação de sedimentos de rios e solos. Excelente para separar material antes de usar na bateia.</p>
+              <div class="prod-card__specs">
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> 14 polegadas de diâmetro</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Malha durável e resistente</div>
+                <div class="prod-card__spec"><i class="fa-solid fa-check"></i> Flutuante — uso em rios e ribeirões</div>
+              </div>
+              <div class="prod-card__pricing">
+                <div class="prod-card__new">R$ 125</div>
+                <div class="prod-card__parcel">ou 6x de R$ 20,83 sem juros</div>
+              </div>
+            </div>
+            <div class="prod-card__actions">
+              <a href="https://wa.me/5561991793626?text=Olá!%20Tenho%20interesse%20na%20Peneira%20para%20Garimpo%2014%20Garrett%20Sifter%20por%20R%24%20125.%20Pode%20me%20ajudar?" target="_blank" rel="noopener" class="btn btn--wa btn--sm">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /grid garimpo -->
+      </section>
+      <!-- /GARIMPO -->
+
+    </main>
+    <!-- /products-area -->
+
+  </div><!-- /page-layout -->
+</div><!-- /container -->
+
+<!-- ========================================================
+     CTA BANNER
+     ======================================================== -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner__inner">
+      <div class="cta-banner__text">
+        <span class="cta-banner__label">Acessórios Originais Garrett</span>
+        <h2 class="cta-banner__title">Maximize o Desempenho do Seu Detector</h2>
+        <p class="cta-banner__desc">Bobinas e acessórios 100% originais Garrett com garantia de fábrica. Atendimento especializado em Brasília-DF com envio para todo o Brasil.</p>
+      </div>
+      <div class="cta-banner__actions">
+        <a href="https://wa.me/5561991793626?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20acessórios%20Garrett." target="_blank" rel="noopener" class="btn btn--gold">
+          <i class="fa-brands fa-whatsapp"></i> Falar com Especialista
+        </a>
+        <a href="mailto:info@garrettbrasil.com.br" class="btn btn--outline">
+          <i class="fa-solid fa-envelope"></i> Enviar E-mail
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Distribuidora oficial Garrett no Brasil. Detectores de metal para esporte, segurança e garimpo com garantia e suporte técnico.</p>
+        <div class="footer__social">
+          <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/5561991793626" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Produtos</h4>
+        <div class="footer__links">
+          <a href="sport.html#ace-series">ACE Series</a>
+          <a href="sport.html#at-series">AT Series</a>
+          <a href="sport.html#ouro">Prospecção de Ouro</a>
+          <a href="seguranca.html#portais">Pórticos Walk-Through</a>
+          <a href="seguranca.html#handheld">Detectores Hand-Held</a>
+          <a href="acessorios.html#bobinas">Bobinas</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Empresa</h4>
+        <div class="footer__links">
+          <a href="index.html#sobre">Sobre Nós</a>
+          <a href="index.html#beneficios">Por que Garrett Brasil?</a>
+          <a href="index.html#depoimentos">Depoimentos</a>
+          <a href="index.html#contato">Contato</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <div class="footer__contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span><a href="https://wa.me/5561991793626" target="_blank" rel="noopener">+55 (61) 99179-3626</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:info@garrettbrasil.com.br">info@garrettbrasil.com.br</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <span>garret.brasil</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Brasília — DF, Brasil</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Garrett Brasil. Distribuidora oficial Garrett no Brasil. Todos os direitos reservados.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5561991793626?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20acessórios%20Garrett." target="_blank" rel="noopener" class="whatsapp-float" title="Falar via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <div class="whatsapp-float__label">
+    Fale Conosco
+    <small>Resposta rápida</small>
+  </div>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>

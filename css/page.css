@@ -1,0 +1,574 @@
+/* ============================================================
+   GARRETT BRASIL — page.css
+   CSS for internal pages: sport.html, seguranca.html, acessorios.html
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   1. ACTIVE NAV LINK ON PAGES
+   ---------------------------------------------------------- */
+.nav__link.active {
+  color: var(--clr-gold);
+  background: rgba(240,196,0,0.07);
+}
+
+/* ----------------------------------------------------------
+   2. PAGE HERO
+   ---------------------------------------------------------- */
+.page-hero {
+  position: relative;
+  margin-top: var(--nav-h);
+  padding: 80px 0;
+  background: var(--clr-darkest);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26,24,22,0.93) 0%,
+    rgba(26,24,22,0.78) 55%,
+    rgba(26,24,22,0.55) 100%
+  );
+  z-index: 0;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+/* Per-page background images */
+.page-hero--sport {
+  background-image: url('../6 Images and Videos_Security/ACE Apex/1142320-Apex-right-angle-blk-bckgrnd.jpg');
+}
+
+.page-hero--security {
+  background-image: url('../6 Images and Videos_Security/Super Scanner V/01-superScannerV-black2000x1000.jpg');
+}
+
+.page-hero--acessorios {
+  background-image: url('../6 Images and Videos_Security/PRO-POINTER AT/1140900 Pro-Pointer AT diver 1500x1125.jpg');
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 0.8rem;
+  color: var(--clr-muted);
+}
+
+.breadcrumb a {
+  color: var(--clr-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.breadcrumb a:hover { color: var(--clr-gold); }
+
+.breadcrumb__sep {
+  color: var(--clr-border);
+  font-size: 0.7rem;
+}
+
+.breadcrumb__current { color: var(--clr-gold); }
+
+/* Hero text */
+.page-hero__label {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clr-gold);
+  margin-bottom: 12px;
+}
+
+.page-hero__title {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--clr-white);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.page-hero__title span { color: var(--clr-gold); }
+
+.page-hero__desc {
+  font-size: 1rem;
+  color: var(--clr-muted);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* ----------------------------------------------------------
+   3. QUICK FILTERS BAR
+   ---------------------------------------------------------- */
+.quick-filters {
+  background: var(--clr-darker);
+  border-bottom: 1px solid var(--clr-border);
+  padding: 14px 0;
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 90;
+}
+
+.quick-filters__inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-filters__label {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-muted);
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+.qf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: var(--radius-xl);
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--clr-muted);
+  background: transparent;
+  border: 1.5px solid var(--clr-border);
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.qf-btn:hover {
+  color: var(--clr-white);
+  border-color: rgba(240,196,0,0.3);
+  background: rgba(240,196,0,0.06);
+}
+
+.qf-btn.active {
+  background: var(--clr-gold);
+  color: var(--clr-darkest);
+  border-color: var(--clr-gold);
+}
+
+/* ----------------------------------------------------------
+   4. PAGE LAYOUT (sidebar + content)
+   ---------------------------------------------------------- */
+.page-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  padding: 40px 0 80px;
+  align-items: start;
+}
+
+/* ----------------------------------------------------------
+   5. SIDEBAR
+   ---------------------------------------------------------- */
+.sidebar {
+  position: sticky;
+  top: calc(var(--nav-h) + 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar__widget {
+  background: var(--clr-darker);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.sidebar__widget-head {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--clr-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sidebar__widget-title {
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clr-white);
+}
+
+.sidebar__widget-body {
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Checkbox filters */
+.sidebar__check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--clr-muted);
+  transition: color var(--transition);
+  user-select: none;
+}
+
+.sidebar__check:hover { color: var(--clr-white); }
+
+.sidebar__check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--clr-gold);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.sidebar__check input[type="checkbox"]:checked + span {
+  color: var(--clr-white);
+  font-weight: 500;
+}
+
+.sidebar__check span { flex: 1; }
+
+.sidebar__check-count {
+  font-size: 0.75rem;
+  color: var(--clr-muted);
+  background: rgba(255,255,255,0.06);
+  padding: 1px 6px;
+  border-radius: var(--radius-xl);
+}
+
+/* Price range */
+.sidebar__range {
+  width: 100%;
+  accent-color: var(--clr-gold);
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.sidebar__range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--clr-muted);
+  margin-top: 4px;
+}
+
+/* Clear filters btn */
+.sidebar__clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--clr-muted);
+  cursor: pointer;
+  transition: color var(--transition);
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.sidebar__clear:hover { color: var(--clr-gold); }
+
+/* Promo widget */
+.sidebar__widget--promo {
+  background: linear-gradient(135deg, var(--clr-teal-dark) 0%, var(--clr-teal) 100%);
+  border-color: var(--clr-teal);
+}
+
+.sidebar__widget--promo .sidebar__widget-body {
+  padding: 20px 18px;
+  gap: 12px;
+}
+
+.sidebar__promo-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.sidebar__promo-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.sidebar__promo-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+}
+
+.sidebar__promo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.15);
+  border: 1.5px solid rgba(255,255,255,0.35);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-head);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.sidebar__promo-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* Certification badges in sidebar */
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 18px;
+}
+
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  background: rgba(240,196,0,0.1);
+  border: 1px solid rgba(240,196,0,0.25);
+  border-radius: var(--radius-xl);
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-gold);
+}
+
+.cert-badge i {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* ----------------------------------------------------------
+   6. PRODUCTS AREA
+   ---------------------------------------------------------- */
+.products-area {
+  min-width: 0; /* prevent grid blowout */
+}
+
+.products-section {
+  margin-bottom: 52px;
+}
+
+.products-section:last-child {
+  margin-bottom: 0;
+}
+
+.products-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(240,196,0,0.2);
+}
+
+.products-section-title {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--clr-gold);
+  letter-spacing: 0.04em;
+}
+
+.products-section-title i {
+  margin-right: 8px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.products-section-desc {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  margin-top: 4px;
+}
+
+.products-section-count {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  color: var(--clr-muted);
+  background: rgba(255,255,255,0.06);
+  padding: 4px 10px;
+  border-radius: var(--radius-xl);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Page products grid — 3 cols */
+.products__grid--page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* ----------------------------------------------------------
+   7. PRODUCT CARD ADDITIONS (page-specific)
+   ---------------------------------------------------------- */
+/* Slightly smaller card image on page grids */
+.products__grid--page .prod-card__img {
+  height: 180px;
+}
+
+/* Spec list inside card */
+.prod-card__specs {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.prod-card__spec {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--clr-muted);
+}
+
+.prod-card__spec i {
+  color: var(--clr-teal);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  width: 12px;
+}
+
+/* "Ver detalhes" link */
+.prod-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--clr-teal);
+  margin-top: 6px;
+  transition: gap var(--transition), color var(--transition);
+}
+
+.prod-card__link:hover {
+  color: var(--clr-gold);
+  gap: 8px;
+}
+
+/* ----------------------------------------------------------
+   8. SECTION ANCHOR OFFSET (for sticky nav)
+   ---------------------------------------------------------- */
+.section-anchor {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  margin-top: calc(-1 * (var(--nav-h) + 56px + 20px));
+  padding-top: calc(var(--nav-h) + 56px + 20px);
+}
+
+/* ----------------------------------------------------------
+   9. RESPONSIVE — 900px (collapse layout)
+   ---------------------------------------------------------- */
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .sidebar__widget--promo {
+    grid-column: span 2;
+  }
+
+  .products__grid--page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-filters {
+    position: relative;
+    top: 0;
+  }
+
+  .page-hero {
+    background-attachment: scroll;
+  }
+}
+
+/* ----------------------------------------------------------
+   10. RESPONSIVE — 600px
+   ---------------------------------------------------------- */
+@media (max-width: 600px) {
+  .page-hero {
+    padding: 60px 0;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar__widget--promo {
+    grid-column: span 1;
+  }
+
+  .products__grid--page {
+    grid-template-columns: 1fr;
+  }
+
+  .products-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .quick-filters__inner {
+    gap: 6px;
+  }
+
+  .qf-btn {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+}
