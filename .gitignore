@@ -1,0 +1,26 @@
+# Videos — too large for GitHub (87MB–872MB per file)
+# Host on YouTube, Vimeo, or cloud CDN and update HTML src paths
+video/
+
+# Helper scripts used during setup
+copy-assets.ps1
+cleanup.ps1
+cleanup.bat
+
+# Misc files not part of the site
+create_keywords.py
+keywords.xlsx
+
+# CSS backups
+css/*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+.vscode/
+.idea/
