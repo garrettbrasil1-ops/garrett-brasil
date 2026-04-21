@@ -572,3 +572,44 @@
     font-size: 0.78rem;
   }
 }
+
+/* ==========================================================
+   PAGE (CATALOG) — MOBILE OPTIMIZATION
+   ========================================================== */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .page-hero { padding: 50px 0; }
+  .page-hero__title { font-size: clamp(1.5rem, 7vw, 2rem); }
+  .page-hero__desc  { font-size: 0.9rem; }
+
+  /* Product grid: always 1 column */
+  .products__grid--page { grid-template-columns: 1fr; }
+
+  /* Filter buttons: wrap cleanly */
+  .quick-filters__inner { gap: 5px; }
+  .qf-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    min-height: 40px;
+  }
+
+  /* Sidebar: 1 column, no sticky */
+  .sidebar {
+    grid-template-columns: 1fr;
+    position: static;
+  }
+  .sidebar__widget--promo { grid-column: span 1; }
+
+  /* Sort/count header */
+  .products-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-hero { padding: 40px 0; }
+  .qf-btn { padding: 7px 10px; font-size: 0.75rem; }
+}

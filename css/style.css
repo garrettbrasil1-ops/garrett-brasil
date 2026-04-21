@@ -60,6 +60,13 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Touch devices — remove tap flash, use manipulation */
+a, button, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 a {
@@ -73,6 +80,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  /* prevent layout shift on load */
+  content-visibility: auto;
+}
+
+/* Prevent iOS Safari from zooming on input focus (needs 16px+) */
+input, select, textarea {
+  font-size: max(1rem, 16px);
 }
 
 button {
@@ -1835,4 +1849,114 @@ button {
   .contact__form {
     padding: 24px 18px;
   }
+}
+
+/* ==========================================================
+   MOBILE OPTIMIZATION — comprehensive additions
+   ========================================================== */
+
+/* ── 768px enhancements ─────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Tighter section padding */
+  .section { padding: 48px 0; }
+
+  /* Hide hero scroll indicator (no room on mobile) */
+  .hero__scroll { display: none; }
+
+  /* Hide background video on mobile — saves bandwidth & battery */
+  .hero__video-wrap { display: none; }
+
+  /* Hero gradient fallback when video is hidden */
+  .hero {
+    background: linear-gradient(145deg, #1a1816 0%, #0f1b1d 60%, #1a1816 100%);
+  }
+
+  /* Ensure hero content doesn't overflow */
+  .hero__content {
+    max-width: 100%;
+    padding: 40px 0 16px;
+  }
+
+  /* Nav mobile menu — comfortable touch targets */
+  .nav__mobile-menu > a,
+  .nav__mobile-parent > a,
+  .nav__mobile-toggle {
+    min-height: 48px;
+    padding: 14px 20px;
+    font-size: 0.97rem;
+  }
+
+  /* Prevent overflow on product filter tabs */
+  .prod-tabs { flex-wrap: wrap; gap: 6px; }
+  .prod-tab  { padding: 8px 16px; font-size: 0.82rem; }
+
+  /* Stats: 2 columns */
+  .stats__grid { grid-template-columns: 1fr 1fr; }
+
+  /* Footer brand block */
+  .footer__brand { max-width: 100%; }
+
+  /* Buttons: full-width in stacked contexts */
+  .cta-banner__actions .btn {
+    min-height: 50px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ── 480px enhancements ─────────────────────────────────── */
+@media (max-width: 480px) {
+
+  /* Reduce section & container spacing */
+  .section { padding: 40px 0; }
+  .container { padding: 0 16px; }
+
+  /* Base font scale down slightly */
+  body { font-size: 0.95rem; }
+
+  /* Headings */
+  h1 { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+  h2 { font-size: clamp(1.3rem, 5.5vw, 1.8rem); }
+  h3 { font-size: clamp(1.1rem, 4.5vw, 1.4rem); }
+
+  /* All buttons: comfortable touch target */
+  .btn {
+    min-height: 48px;
+    padding: 13px 20px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Small stat cards: 1 column on tiny screens */
+  .stats__grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .stat__number { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+
+  /* Product cards: 1 column, comfortable size */
+  .prod-card { border-radius: 10px; }
+  .prod-card__name { font-size: 0.95rem; }
+
+  /* Footer: center everything */
+  .footer__social { justify-content: center; }
+  .footer__col-title { font-size: 0.8rem; }
+
+  /* Contact form */
+  .contact__form { padding: 20px 14px; }
+  .form__input,
+  .form__select,
+  .form__textarea {
+    font-size: 1rem; /* prevents iOS zoom on focus */
+    min-height: 44px;
+  }
+
+  /* Search bar */
+  .search-bar__input { font-size: 1rem; }
+}
+
+/* ── 360px — very small phones ──────────────────────────── */
+@media (max-width: 360px) {
+  .container { padding: 0 12px; }
+  .nav__logo-img { height: 26px; }
+  .btn { font-size: 0.85rem; padding: 12px 16px; }
 }
