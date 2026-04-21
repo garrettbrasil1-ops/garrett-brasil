@@ -572,7 +572,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   width: 100%;
 }
@@ -596,6 +596,7 @@
 
 .prod-video-item__title .fa-youtube {
   color: #ff0000;
+  font-size: 1.1rem;
 }
 
 .prod-video-item__desc {
@@ -605,41 +606,37 @@
   line-height: 1.55;
 }
 
-/* 16:9 responsive container — works for both iframe and video */
+/* ── 16:9 Video Container ──────────────────────────────────
+   Uses aspect-ratio (modern) — no padding-bottom hack needed.
+   iframe/video fill the box without position:absolute tricks. */
 .prod-video-item__embed,
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
   border-radius: 12px;
+  overflow: hidden;
   background: #000;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.55);
 }
 
-/* iframe fills container — YouTube, Vimeo */
 .prod-video-item__embed iframe,
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
   display: block;
 }
 
-/* native video fills container */
 .prod-video-item__embed video,
 .video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
   display: block;
+  object-fit: contain;
 }
 
 /* Legacy classes — kept for compatibility */
@@ -665,8 +662,9 @@
 .prod-video__embed {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 12px;
   background: #000;
@@ -674,12 +672,10 @@
 
 .prod-video__embed iframe,
 .prod-video__embed video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  display: block;
 }
 
 /* ------ Diferentials Tab ------ */
@@ -956,11 +952,15 @@
 .prod-sidebar__btn--wa {
   background: #25d366;
   color: #fff;
+  width: auto;
+  align-self: stretch;
+  justify-content: center;
 }
 
 .prod-sidebar__btn--wa:hover {
   background: #1ebe5d;
   transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
 }
 
 .prod-sidebar__btn--teal {
@@ -982,6 +982,40 @@
 .prod-sidebar__btn--outline:hover {
   color: var(--clr-white);
   border-color: rgba(255,255,255,0.2);
+}
+
+/* ── WhatsApp Button — standalone (fora da sidebar) ──────── */
+.whatsapp-container {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(37,211,102,0.3);
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37,211,102,0.4);
+  color: #fff;
+}
+
+.whatsapp-button i {
+  font-size: 1.2rem;
 }
 
 /* Feature list in sidebar */

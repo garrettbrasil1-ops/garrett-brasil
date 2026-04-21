@@ -1620,32 +1620,40 @@ button {
    ---------------------------------------------------------- */
 .whatsapp-float {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
+  bottom: 24px;
+  right: 24px;
   z-index: 1100;
   display: flex;
   align-items: center;
   gap: 10px;
   background: #25d366;
   color: #fff;
-  padding: 12px 20px 12px 14px;
-  border-radius: var(--radius-xl);
-  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  padding: 13px 22px 13px 16px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
   text-decoration: none;
   font-family: var(--font-head);
   font-size: 0.88rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  /* garante que nunca ocupe largura da tela */
+  width: auto;
+  max-width: 220px;
+  white-space: nowrap;
 }
 
 .whatsapp-float:hover {
   background: #1da851;
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(37,211,102,0.5);
+  box-shadow: 0 8px 28px rgba(37,211,102,0.55);
+  color: #fff;
 }
 
-.whatsapp-float i { font-size: 1.3rem; }
+.whatsapp-float i {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
 
 .whatsapp-float__label { line-height: 1.2; }
 
