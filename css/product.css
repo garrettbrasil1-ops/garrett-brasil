@@ -571,9 +571,78 @@
 .prod-videos {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
 }
 
+/* ------ Video Item ------ */
+.prod-video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.prod-video-item__title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prod-video-item__title .fa-youtube {
+  color: #ff0000;
+}
+
+.prod-video-item__desc {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  margin-top: -2px;
+  line-height: 1.55;
+}
+
+/* 16:9 responsive container — works for both iframe and video */
+.prod-video-item__embed,
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+/* iframe fills container — YouTube, Vimeo */
+.prod-video-item__embed iframe,
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* native video fills container */
+.prod-video-item__embed video,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Legacy classes — kept for compatibility */
 .prod-video {
   display: flex;
   flex-direction: column;
@@ -596,61 +665,20 @@
 .prod-video__embed {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: var(--radius-md);
+  padding-bottom: 56.25%;
+  height: 0;
   overflow: hidden;
-  background: var(--clr-darkest);
-}
-
-.prod-video__embed iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* ------ Video Item (local MP4 player) ------ */
-.prod-video-item {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.prod-video-item__title {
-  font-family: var(--font-head);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--clr-white);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.prod-video-item__desc {
-  font-size: 0.85rem;
-  color: var(--clr-muted);
-  margin-top: -4px;
-  line-height: 1.5;
-}
-
-/* Container: defines the 16/9 frame — video positions inside it */
-.prod-video-item__embed {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  border-radius: 12px;
   background: #000;
 }
 
-/* Video fills container exactly — controls stay at bottom, no clipping */
-.prod-video-item__embed video {
+.prod-video__embed iframe,
+.prod-video__embed video {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: block;
   border: none;
 }
 
