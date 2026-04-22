@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Garrett Brasil | Guias, Dicas e Novidades sobre Detectores de Metal</title>
+  <meta name="description" content="Guias completos, comparativos e dicas para quem usa detectores de metal. Aprenda a escolher o detector certo, técnicas de uso e novidades Garrett Brasil." />
+  <meta name="keywords" content="detector de metais blog, guia detector de metais, dicas detecção, Garrett Brasil, melhor detector de metais" />
+  <link rel="canonical" href="https://garrettbrasil.com.br/blog.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog Garrett Brasil — Guias e Dicas de Detectores de Metal" />
+  <meta property="og:description" content="Artigos especializados sobre detectores de metal: como escolher, usar e tirar o máximo da sua linha Garrett." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://garrettbrasil.com.br/blog.html" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========================================================
+     HEADER
+     ======================================================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="nav__logo-img">
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Início</a>
+        <div class="nav__link nav__link--dropdown">
+          Produtos <i class="fa-solid fa-chevron-down" style="font-size:0.65rem"></i>
+          <div class="nav__dropdown">
+            <a href="sport.html">Detectores Sport</a>
+            <a href="seguranca.html">Segurança</a>
+            <a href="acessorios.html">Acessórios</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav__link active">Blog</a>
+        <a href="index.html#sobre" class="nav__link">Sobre</a>
+        <a href="index.html#contato" class="nav__link">Contato</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__search-btn" id="searchToggle" title="Buscar produto">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" class="nav__cta">
+          <i class="fa-brands fa-whatsapp"></i> Fale Conosco
+        </a>
+        <button class="nav__hamburger" id="hamburger" title="Menu">
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar" id="searchBar">
+  <div class="search-bar__inner">
+    <input type="text" class="search-bar__input" id="searchInput" placeholder="Buscar detectores, acessórios, bobinas..." autocomplete="off" />
+    <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html"><i class="fa-solid fa-house" style="width:18px"></i> Início</a>
+  <div class="nav__mobile-parent">
+    <div class="nav__mobile-toggle" id="mobileDropToggle">
+      <span><i class="fa-solid fa-box" style="width:18px"></i> Produtos</span>
+      <i class="fa-solid fa-chevron-down" style="font-size:0.7rem"></i>
+    </div>
+    <div class="nav__mobile-submenu" id="mobileDropMenu">
+      <a href="sport.html">Detectores Sport</a>
+      <a href="seguranca.html">Segurança</a>
+      <a href="acessorios.html">Acessórios</a>
+    </div>
+  </div>
+  <a href="blog.html"><i class="fa-solid fa-newspaper" style="width:18px"></i> Blog</a>
+  <a href="index.html#sobre"><i class="fa-solid fa-circle-info" style="width:18px"></i> Sobre</a>
+  <a href="index.html#contato"><i class="fa-solid fa-envelope" style="width:18px"></i> Contato</a>
+  <a href="https://wa.me/5561991793626" target="_blank" rel="noopener" style="color:#25d366">
+    <i class="fa-brands fa-whatsapp" style="width:18px"></i> WhatsApp
+  </a>
+</div>
+
+<!-- ========================================================
+     BLOG HERO
+     ======================================================== -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="blog-hero__content">
+      <nav class="breadcrumb" style="display:flex;align-items:center;gap:8px;margin-bottom:14px;font-size:0.8rem;color:var(--clr-muted);">
+        <a href="index.html" style="color:var(--clr-muted);text-decoration:none;">Início</a>
+        <span style="color:var(--clr-border);font-size:0.7rem;"><i class="fa-solid fa-chevron-right"></i></span>
+        <span style="color:var(--clr-gold);">Blog</span>
+      </nav>
+      <span class="blog-hero__label"><i class="fa-solid fa-newspaper"></i> &nbsp;Central de Conhecimento</span>
+      <h1 class="blog-hero__title">Blog <span>Garrett Brasil</span></h1>
+      <p class="blog-hero__desc">Guias práticos, comparativos detalhados e dicas de especialistas para você escolher, usar e aproveitar ao máximo o seu detector de metais Garrett.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     CATEGORIES BAR
+     ======================================================== -->
+<div class="blog-cats">
+  <div class="container">
+    <div class="blog-cats__inner">
+      <span class="blog-cats__label">Categorias:</span>
+      <a href="#todos" class="blog-cat-btn active"><i class="fa-solid fa-border-all"></i> Todos</a>
+      <a href="#guias" class="blog-cat-btn"><i class="fa-solid fa-book-open"></i> Guias de Compra</a>
+      <a href="#tecnicas" class="blog-cat-btn"><i class="fa-solid fa-magnifying-glass"></i> Técnicas de Uso</a>
+      <a href="#seguranca" class="blog-cat-btn"><i class="fa-solid fa-shield-halved"></i> Segurança</a>
+      <a href="#ouro" class="blog-cat-btn"><i class="fa-solid fa-gem"></i> Prospecção de Ouro</a>
+    </div>
+  </div>
+</div>
+
+<!-- ========================================================
+     BLOG CONTENT
+     ======================================================== -->
+<section class="blog-section" id="todos">
+  <div class="container">
+
+    <div class="blog-section__header">
+      <h2 class="blog-section__title"><i class="fa-solid fa-fire" style="font-size:1rem;margin-right:8px;opacity:0.8;"></i> Artigos em Destaque</h2>
+      <span class="blog-section__count">5 artigos</span>
+    </div>
+
+    <!-- Featured Article -->
+    <a href="blog/como-escolher-detector-de-metais-profissional.html" class="blog-featured">
+      <div class="blog-featured__img-wrap">
+        <div class="blog-featured__img-placeholder">🔍</div>
+      </div>
+      <div class="blog-featured__body">
+        <div class="blog-featured__cats">
+          <span class="blog-tag"><i class="fa-solid fa-book-open"></i> Guia de Compra</span>
+          <span class="blog-tag blog-tag--teal"><i class="fa-solid fa-star"></i> Destaque</span>
+        </div>
+        <h2 class="blog-featured__title">Como Escolher um Detector de Metais Profissional: Guia Completo 2025</h2>
+        <p class="blog-featured__excerpt">Frequência de operação, profundidade de detecção, impermeabilidade, tecnologia de bobina — explicamos cada critério para que você invista com segurança e encontre o modelo ideal para sua necessidade.</p>
+        <div class="blog-featured__meta">
+          <span><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+          <span><i class="fa-regular fa-clock"></i> 8 min de leitura</span>
+          <span><i class="fa-solid fa-eye"></i> Guia Completo</span>
+        </div>
+        <span class="blog-featured__readmore">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Articles Grid -->
+    <div class="blog-grid" id="guias">
+
+      <!-- Card 1 -->
+      <a href="blog/detector-de-metais-em-aeroportos.html" class="blog-card">
+        <div class="blog-card__img-wrap">
+          <div class="blog-card__img-placeholder">✈️</div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__cats">
+            <span class="blog-tag"><i class="fa-solid fa-shield-halved"></i> Segurança</span>
+          </div>
+          <h3 class="blog-card__title">Detector de Metais em Aeroportos: Como Funciona na Prática</h3>
+          <p class="blog-card__excerpt">Entenda a tecnologia por trás dos portais walk-through e detectores hand-held usados em aeroportos, terminais e eventos — e por que a linha Garrett é a preferida no Brasil.</p>
+          <div class="blog-card__meta">
+            <span><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+            <span><i class="fa-regular fa-clock"></i> 6 min</span>
+          </div>
+          <span class="blog-card__readmore">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="blog/melhor-detector-para-encontrar-ouro-brasil.html" class="blog-card">
+        <div class="blog-card__img-wrap">
+          <div class="blog-card__img-placeholder">🥇</div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__cats">
+            <span class="blog-tag"><i class="fa-solid fa-gem"></i> Prospecção de Ouro</span>
+          </div>
+          <h3 class="blog-card__title">Melhor Detector para Encontrar Ouro no Brasil em 2025</h3>
+          <p class="blog-card__excerpt">Garimpo em solo brasileiro exige equipamento preparado para nossa mineralogia. Comparamos AXIOM, AT Gold e Goldmaster 24K para você escolher o certo.</p>
+          <div class="blog-card__meta">
+            <span><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+            <span><i class="fa-regular fa-clock"></i> 7 min</span>
+          </div>
+          <span class="blog-card__readmore">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="blog/vale-a-pena-investir-em-detector-de-metais.html" class="blog-card">
+        <div class="blog-card__img-wrap">
+          <div class="blog-card__img-placeholder">💰</div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__cats">
+            <span class="blog-tag"><i class="fa-solid fa-book-open"></i> Guia de Compra</span>
+          </div>
+          <h3 class="blog-card__title">Vale a Pena Investir em um Detector de Metais?</h3>
+          <p class="blog-card__excerpt">Analisamos custo-benefício real: quanto custa começar, quanto tempo leva para pagar o investimento e quais perfis de uso justificam a compra de um detector profissional.</p>
+          <div class="blog-card__meta">
+            <span><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+            <span><i class="fa-regular fa-clock"></i> 5 min</span>
+          </div>
+          <span class="blog-card__readmore">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="blog/diferenca-detector-profissional-e-hobby.html" class="blog-card">
+        <div class="blog-card__img-wrap">
+          <div class="blog-card__img-placeholder">⚙️</div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__cats">
+            <span class="blog-tag"><i class="fa-solid fa-book-open"></i> Guia de Compra</span>
+            <span class="blog-tag blog-tag--teal"><i class="fa-solid fa-magnifying-glass"></i> Técnicas</span>
+          </div>
+          <h3 class="blog-card__title">Diferença entre Detector Profissional e Hobby: Qual Escolher?</h3>
+          <p class="blog-card__excerpt">Tecnologia Multi-IQ, frequência única, discriminação de alvos — explicamos o que realmente diferencia um detector de entrada de um equipamento profissional.</p>
+          <div class="blog-card__meta">
+            <span><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+            <span><i class="fa-regular fa-clock"></i> 6 min</span>
+          </div>
+          <span class="blog-card__readmore">Ler artigo <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     NEWSLETTER
+     ======================================================== -->
+<section class="blog-newsletter">
+  <div class="container">
+    <div class="blog-newsletter__inner">
+      <div class="blog-newsletter__text">
+        <h2 class="blog-newsletter__title">Fique por <span>dentro</span></h2>
+        <p class="blog-newsletter__desc">Receba novidades Garrett, dicas de detecção e promoções diretamente no seu WhatsApp.</p>
+      </div>
+      <a href="https://wa.me/5561991793626?text=Olá!%20Gostaria%20de%20receber%20novidades%20e%20dicas%20sobre%20detectores%20Garrett." target="_blank" rel="noopener" class="blog-newsletter__btn">
+        <i class="fa-brands fa-whatsapp"></i> Entrar no grupo de novidades
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Distribuidora oficial Garrett no Brasil. Detectores de metal para esporte, segurança e garimpo com garantia e suporte técnico.</p>
+        <div class="footer__social">
+          <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/5561991793626" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Produtos</h4>
+        <div class="footer__links">
+          <a href="sport.html#ace-series">ACE Series</a>
+          <a href="sport.html#at-series">AT Series</a>
+          <a href="sport.html#ouro">Prospecção de Ouro</a>
+          <a href="seguranca.html#portais">Pórticos Walk-Through</a>
+          <a href="seguranca.html#handheld">Detectores Hand-Held</a>
+          <a href="acessorios.html#bobinas">Bobinas</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Empresa</h4>
+        <div class="footer__links">
+          <a href="index.html#sobre">Sobre Nós</a>
+          <a href="index.html#beneficios">Por que Garrett Brasil?</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contato">Contato</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <div class="footer__contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span><a href="https://wa.me/5561991793626" target="_blank" rel="noopener">+55 (61) 99179-3626</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:info@garrettbrasil.com.br">info@garrettbrasil.com.br</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <span>garrettbrasil.com.br</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Brasília — DF, Brasil</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Garrett Brasil. Distribuidora oficial Garrett no Brasil. Todos os direitos reservados.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5561991793626?text=Olá!%20Vim%20pelo%20blog%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20detectores%20Garrett." target="_blank" rel="noopener" class="whatsapp-float" title="Falar via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <div class="whatsapp-float__label">
+    Fale Conosco
+    <small>Resposta rápida</small>
+  </div>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
