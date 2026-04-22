@@ -611,6 +611,116 @@
   margin-bottom: 0;
 }
 
+/* Article inline images */
+.article-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: var(--radius-md);
+  display: block;
+  margin: 28px auto;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.5);
+  object-fit: cover;
+}
+
+.article-img--full { max-width: 100%; }
+
+.article-img-caption {
+  text-align: center;
+  font-size: 0.76rem;
+  color: var(--clr-muted);
+  margin: -18px auto 28px;
+  max-width: 700px;
+  font-style: italic;
+}
+
+/* Product visual grid (2 or 3 columns) */
+.article-prod-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 28px 0;
+}
+
+.article-prod-grid--2col { grid-template-columns: repeat(2, 1fr); }
+
+.article-prod-grid__item {
+  background: var(--clr-darker);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.article-prod-grid__item:hover {
+  border-color: rgba(240,196,0,0.4);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+.article-prod-grid__img-wrap {
+  background: var(--clr-darkest);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  overflow: hidden;
+}
+
+.article-prod-grid__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.article-prod-grid__item:hover .article-prod-grid__img {
+  transform: scale(1.05);
+}
+
+.article-prod-grid__body {
+  padding: 12px 14px;
+  flex: 1;
+}
+
+.article-prod-grid__name {
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 4px;
+}
+
+.article-prod-grid__desc {
+  font-size: 0.75rem;
+  color: var(--clr-muted);
+  line-height: 1.5;
+}
+
+.article-prod-grid__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--clr-gold);
+  margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+  .article-prod-grid { grid-template-columns: repeat(2, 1fr); }
+  .article-prod-grid--2col { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 400px) {
+  .article-prod-grid { grid-template-columns: 1fr; }
+}
+
 /* Comparison table */
 .article-table-wrap {
   overflow-x: auto;
