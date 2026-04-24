@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seja um Revendedor Garrett Brasil — Distribuidora Oficial</title>
+  <meta name="description" content="Torne-se um revendedor autorizado Garrett no Brasil. Produtos reconhecidos mundialmente, suporte técnico completo e margem competitiva. Cadastre-se agora." />
+  <meta name="keywords" content="revendedor Garrett Brasil, revenda detector de metais, parceiro Garrett, distribuidora Garrett, como revender detector" />
+  <link rel="canonical" href="https://garrettbrasil.com.br/revendedor.html" />
+  <meta property="og:title" content="Seja um Revendedor Garrett Brasil" />
+  <meta property="og:description" content="Produtos reconhecidos em mais de 150 países, suporte técnico completo e margem competitiva. Cadastre-se como revendedor autorizado." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://garrettbrasil.com.br/revendedor.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/page.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ── Revendedor page custom styles ── */
+
+    /* Hero */
+    .rev-hero {
+      position: relative;
+      margin-top: var(--nav-h);
+      padding: 90px 0 70px;
+      background: var(--clr-darkest);
+      overflow: hidden;
+    }
+    .rev-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 40%, rgba(240,196,0,0.09) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(0,190,172,0.05) 0%, transparent 60%);
+      z-index: 0;
+    }
+    .rev-hero__content {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+    }
+    .rev-hero__label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-head);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      margin-bottom: 14px;
+    }
+    .rev-hero__title {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      color: var(--clr-white);
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+    .rev-hero__title span { color: var(--clr-gold); }
+    .rev-hero__desc {
+      font-size: 1.05rem;
+      color: var(--clr-muted);
+      max-width: 540px;
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+    .rev-hero__actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .rev-hero__trust {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid var(--clr-border);
+    }
+    .rev-hero__trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+    }
+    .rev-hero__trust-item i { color: var(--clr-gold); }
+
+    /* Section base */
+    .rev-section {
+      padding: 72px 0;
+    }
+    .rev-section + .rev-section {
+      border-top: 1px solid var(--clr-border);
+    }
+    .rev-section--dark {
+      background: var(--clr-darker);
+      border-top: 1px solid var(--clr-border);
+      border-bottom: 1px solid var(--clr-border);
+    }
+    .rev-section__head {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 52px;
+    }
+    .rev-section__label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--clr-gold);
+      margin-bottom: 10px;
+    }
+    .rev-section__title {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 800;
+      color: var(--clr-white);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .rev-section__title span { color: var(--clr-gold); }
+    .rev-section__subtitle {
+      font-size: 0.95rem;
+      color: var(--clr-muted);
+      line-height: 1.7;
+    }
+
+    /* Oportunidade — stats */
+    .rev-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 52px;
+    }
+    .rev-stat {
+      background: var(--clr-darker);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 28px 22px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .rev-stat::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--clr-gold);
+      opacity: 0.5;
+    }
+    .rev-stat__number {
+      font-family: var(--font-head);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--clr-gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .rev-stat__label {
+      font-size: 0.8rem;
+      color: var(--clr-muted);
+      line-height: 1.45;
+    }
+
+    /* Oportunidade — text + image split */
+    .rev-oport {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: center;
+    }
+    .rev-oport__text { }
+    .rev-oport__text h3 {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      margin-bottom: 14px;
+    }
+    .rev-oport__text p {
+      font-size: 0.95rem;
+      color: var(--clr-muted);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .rev-oport__text p:last-child { margin-bottom: 0; }
+    .rev-oport__img-card {
+      background: var(--clr-darker);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      position: relative;
+    }
+    .rev-oport__img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .rev-oport__img-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(0deg, rgba(26,24,22,0.92) 0%, transparent 100%);
+    }
+    .rev-oport__img-caption {
+      font-family: var(--font-head);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--clr-gold);
+      letter-spacing: 0.06em;
+    }
+
+    /* Vantagens — cards grid */
+    .rev-vantagens {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .rev-van-card {
+      background: var(--clr-darkest);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    }
+    .rev-van-card:hover {
+      border-color: rgba(240,196,0,0.35);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transform: translateY(-3px);
+    }
+    .rev-van-card__icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(240,196,0,0.1);
+      border: 1px solid rgba(240,196,0,0.2);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: var(--clr-gold);
+      flex-shrink: 0;
+    }
+    .rev-van-card__title {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      line-height: 1.25;
+    }
+    .rev-van-card__desc {
+      font-size: 0.85rem;
+      color: var(--clr-muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    /* Perfil — checklist */
+    .rev-perfil {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .rev-perfil__col-title {
+      font-family: var(--font-head);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--clr-gold);
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .rev-check-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .rev-check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--clr-darker);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-sm);
+    }
+    .rev-check-item__icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .rev-check-item__icon--green {
+      background: rgba(0,190,172,0.12);
+      color: var(--clr-teal);
+    }
+    .rev-check-item__icon--gold {
+      background: rgba(240,196,0,0.12);
+      color: var(--clr-gold);
+    }
+    .rev-check-item__text {
+      font-size: 0.88rem;
+      color: var(--clr-muted);
+      line-height: 1.55;
+    }
+    .rev-check-item__text strong {
+      display: block;
+      font-weight: 600;
+      color: var(--clr-white);
+      margin-bottom: 2px;
+      font-size: 0.9rem;
+    }
+
+    /* Como funciona — timeline steps */
+    .rev-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+    .rev-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--clr-gold) 0%, rgba(240,196,0,0.15) 100%);
+      z-index: 0;
+    }
+    .rev-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .rev-step__num {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--clr-gold);
+      color: var(--clr-darkest);
+      font-family: var(--font-head);
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(240,196,0,0.3);
+    }
+    .rev-step:nth-child(n+2) .rev-step__num {
+      background: var(--clr-darker);
+      color: var(--clr-gold);
+      border: 2px solid rgba(240,196,0,0.4);
+      box-shadow: none;
+    }
+    .rev-step__title {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--clr-white);
+      margin-bottom: 8px;
+    }
+    .rev-step__desc {
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+      line-height: 1.6;
+    }
+
+    /* CTA final */
+    .rev-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--clr-darkest) 0%, rgba(240,196,0,0.04) 100%);
+      border-top: 1px solid var(--clr-border);
+      text-align: center;
+    }
+    .rev-cta__inner { max-width: 600px; margin: 0 auto; }
+    .rev-cta__icon {
+      font-size: 3.5rem;
+      color: var(--clr-gold);
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+    .rev-cta__title {
+      font-family: var(--font-head);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      color: var(--clr-white);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .rev-cta__title span { color: var(--clr-gold); }
+    .rev-cta__desc {
+      font-size: 0.95rem;
+      color: var(--clr-muted);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .rev-cta__actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .rev-cta__note {
+      margin-top: 20px;
+      font-size: 0.78rem;
+      color: var(--clr-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .rev-cta__note i { color: var(--clr-gold); opacity: 0.7; }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .rev-stats { grid-template-columns: repeat(2, 1fr); }
+      .rev-steps { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+      .rev-steps::before { display: none; }
+    }
+    @media (max-width: 768px) {
+      .rev-hero { padding: 60px 0 50px; }
+      .rev-oport { grid-template-columns: 1fr; gap: 32px; }
+      .rev-vantagens { grid-template-columns: 1fr 1fr; }
+      .rev-perfil { grid-template-columns: 1fr; gap: 24px; }
+      .rev-section { padding: 52px 0; }
+    }
+    @media (max-width: 600px) {
+      .rev-stats { grid-template-columns: 1fr 1fr; }
+      .rev-vantagens { grid-template-columns: 1fr; }
+      .rev-steps { grid-template-columns: 1fr; gap: 20px; }
+      .rev-hero__trust { gap: 18px; }
+      .rev-hero__actions { flex-direction: column; }
+      .rev-hero__actions .btn { width: 100%; justify-content: center; }
+      .rev-cta__actions { flex-direction: column; align-items: center; }
+      .rev-cta__actions .btn { width: 100%; max-width: 340px; justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .rev-hero { padding: 50px 0 40px; }
+      .rev-hero__title { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+      .rev-stat__number { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========================================================
+     HEADER
+     ======================================================== -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">
+        <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="nav__logo-img">
+      </a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Início</a>
+        <div class="nav__link nav__link--dropdown">
+          Produtos <i class="fa-solid fa-chevron-down" style="font-size:0.65rem"></i>
+          <div class="nav__dropdown">
+            <a href="sport.html">Detectores Sport</a>
+            <a href="seguranca.html">Segurança</a>
+            <a href="acessorios.html">Acessórios</a>
+          </div>
+        </div>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="index.html#sobre" class="nav__link">Sobre</a>
+        <a href="index.html#contato" class="nav__link">Contato</a>
+      </div>
+      <div class="nav__actions">
+        <button class="nav__search-btn" id="searchToggle" title="Buscar produto">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="https://wa.me/message/J57ZJGDDI3CZA1" target="_blank" rel="noopener" class="nav__cta">
+          <i class="fa-brands fa-whatsapp"></i> Fale Conosco
+        </a>
+        <button class="nav__hamburger" id="hamburger" title="Menu">
+          <i class="fa-solid fa-bars" id="hamburgerIcon"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search Bar -->
+<div class="search-bar" id="searchBar">
+  <div class="search-bar__inner">
+    <input type="text" class="search-bar__input" id="searchInput" placeholder="Buscar detectores, acessórios, bobinas..." autocomplete="off" />
+    <i class="fa-solid fa-magnifying-glass search-bar__icon"></i>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="nav__mobile-menu" id="mobileMenu">
+  <a href="index.html"><i class="fa-solid fa-house" style="width:18px"></i> Início</a>
+  <div class="nav__mobile-parent">
+    <div class="nav__mobile-toggle" id="mobileDropToggle">
+      <span><i class="fa-solid fa-box" style="width:18px"></i> Produtos</span>
+      <i class="fa-solid fa-chevron-down" style="font-size:0.7rem"></i>
+    </div>
+    <div class="nav__mobile-submenu" id="mobileDropMenu">
+      <a href="sport.html">Detectores Sport</a>
+      <a href="seguranca.html">Segurança</a>
+      <a href="acessorios.html">Acessórios</a>
+    </div>
+  </div>
+  <a href="blog.html"><i class="fa-solid fa-newspaper" style="width:18px"></i> Blog</a>
+  <a href="index.html#sobre"><i class="fa-solid fa-circle-info" style="width:18px"></i> Sobre</a>
+  <a href="index.html#contato"><i class="fa-solid fa-envelope" style="width:18px"></i> Contato</a>
+  <a href="https://wa.me/message/J57ZJGDDI3CZA1" target="_blank" rel="noopener" style="color:#25d366">
+    <i class="fa-brands fa-whatsapp" style="width:18px"></i> WhatsApp
+  </a>
+</div>
+
+<!-- ========================================================
+     HERO
+     ======================================================== -->
+<section class="rev-hero">
+  <div class="container">
+    <div class="rev-hero__content">
+      <nav style="display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:0.8rem;color:var(--clr-muted);">
+        <a href="index.html" style="color:var(--clr-muted);text-decoration:none;">Início</a>
+        <span style="color:var(--clr-border);font-size:0.7rem;"><i class="fa-solid fa-chevron-right"></i></span>
+        <span style="color:var(--clr-gold);">Seja um Revendedor</span>
+      </nav>
+      <span class="rev-hero__label">
+        <i class="fa-solid fa-handshake"></i> Programa de Revenda
+      </span>
+      <h1 class="rev-hero__title">Seja um Revendedor<br /><span>Garrett Brasil</span></h1>
+      <p class="rev-hero__desc">Comercialize a linha de detectores de metal mais reconhecida do mundo. Produtos com mais de 60 anos de tecnologia, suporte técnico completo e demanda crescente no Brasil.</p>
+      <div class="rev-hero__actions">
+        <a href="https://wa.me/message/J57ZJGDDI3CZA1?text=Ol%C3%A1!%20Tenho%20interesse%20em%20me%20tornar%20revendedor%20Garrett%20Brasil." target="_blank" rel="noopener" class="btn btn--gold btn--lg">
+          <i class="fa-brands fa-whatsapp"></i> Quero me tornar revendedor
+        </a>
+        <a href="#como-funciona" class="btn btn--ghost">
+          <i class="fa-solid fa-arrow-down"></i> Como funciona
+        </a>
+      </div>
+      <div class="rev-hero__trust">
+        <div class="rev-hero__trust-item"><i class="fa-solid fa-medal"></i> Marca reconhecida em +150 países</div>
+        <div class="rev-hero__trust-item"><i class="fa-solid fa-headset"></i> Suporte técnico em português</div>
+        <div class="rev-hero__trust-item"><i class="fa-solid fa-shield-halved"></i> Produtos 100% originais</div>
+        <div class="rev-hero__trust-item"><i class="fa-solid fa-chart-line"></i> Mercado em crescimento</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SEÇÃO 1 — OPORTUNIDADE
+     ======================================================== -->
+<section class="rev-section" id="oportunidade">
+  <div class="container">
+
+    <div class="rev-section__head">
+      <span class="rev-section__label"><i class="fa-solid fa-chart-line"></i> &nbsp;Mercado</span>
+      <h2 class="rev-section__title">Uma <span>oportunidade real</span> de negócio</h2>
+      <p class="rev-section__subtitle">O mercado brasileiro de detecção e segurança eletrônica cresce consistentemente, impulsionado por demanda pública, privada e de hobbystas — e ainda tem espaço para novos revendedores qualificados.</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="rev-stats">
+      <div class="rev-stat">
+        <div class="rev-stat__number">+150</div>
+        <div class="rev-stat__label">Países onde a Garrett está presente</div>
+      </div>
+      <div class="rev-stat">
+        <div class="rev-stat__number">+60 Anos</div>
+        <div class="rev-stat__label">de liderança no setor de detecção</div>
+      </div>
+      <div class="rev-stat">
+        <div class="rev-stat__number">3 Verticais</div>
+        <div class="rev-stat__label">Sport, Segurança e Prospecção de Ouro</div>
+      </div>
+      <div class="rev-stat">
+        <div class="rev-stat__number">Alta Demanda</div>
+        <div class="rev-stat__label">em empresas, eventos, hobbystas e garimpeiros</div>
+      </div>
+    </div>
+
+    <!-- Split text + image -->
+    <div class="rev-oport">
+      <div class="rev-oport__text">
+        <h3>Por que revender Garrett?</h3>
+        <p>A Garrett é a marca número 1 em detectores de metal no mundo — presente em aeroportos, estádios, tribunais, escolas e expedições de garimpo em mais de 150 países. No Brasil, a demanda é crescente em todos os segmentos.</p>
+        <p>Como revendedor autorizado, você terá acesso à linha completa — dos detectores sport para hobbyistas até os portais de segurança para empresas e eventos — com o respaldo de uma das marcas mais reconhecidas do setor.</p>
+        <p>O mercado brasileiro ainda está em expansão e há oportunidade real de crescimento para parceiros que atuem com dedicação e alinhamento à marca.</p>
+        <a href="https://wa.me/message/J57ZJGDDI3CZA1?text=Ol%C3%A1!%20Tenho%20interesse%20em%20me%20tornar%20revendedor%20Garrett%20Brasil." target="_blank" rel="noopener" class="btn btn--gold" style="margin-top:8px;">
+          <i class="fa-brands fa-whatsapp"></i> Falar com a equipe comercial
+        </a>
+      </div>
+      <div class="rev-oport__img-card">
+        <img src="imagem/pd-6500i-sport-event-2.jpg" alt="Garrett PD 6500i em uso — linha de segurança profissional" class="rev-oport__img" loading="lazy">
+        <div class="rev-oport__img-overlay">
+          <span class="rev-oport__img-caption"><i class="fa-solid fa-shield-halved"></i> &nbsp;Linha Garrett — Segurança, Sport e Garimpo</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     SEÇÃO 2 — VANTAGENS
+     ======================================================== -->
+<section class="rev-section rev-section--dark" id="vantagens">
+  <div class="container">
+
+    <div class="rev-section__head">
+      <span class="rev-section__label"><i class="fa-solid fa-star"></i> &nbsp;Benefícios</span>
+      <h2 class="rev-section__title">Vantagens de ser<br /><span>Revendedor Garrett Brasil</span></h2>
+      <p class="rev-section__subtitle">Mais do que vender produtos — você oferece soluções reconhecidas mundialmente, com o suporte de quem lidera o setor.</p>
+    </div>
+
+    <div class="rev-vantagens">
+
+      <div class="rev-van-card">
+        <div class="rev-van-card__icon"><i class="fa-solid fa-medal"></i></div>
+        <div class="rev-van-card__title">Marca com Reputação Global</div>
+        <div class="rev-van-card__desc">A Garrett é referência mundial em detecção. Vender Garrett é apresentar ao cliente um produto que ele já conhece e confia — facilita imensamente o processo de venda.</div>
+      </div>
+
+      <div class="rev-van-card">
+        <div class="rev-van-card__icon"><i class="fa-solid fa-headset"></i></div>
+        <div class="rev-van-card__title">Suporte Técnico Completo</div>
+        <div class="rev-van-card__desc">Equipe especializada disponível para tirar dúvidas técnicas, auxiliar na especificação de produtos e dar suporte no pós-venda. Você não vende sozinho.</div>
+      </div>
+
+      <div class="rev-van-card">
+        <div class="rev-van-card__icon"><i class="fa-solid fa-tag"></i></div>
+        <div class="rev-van-card__title">Margem Competitiva</div>
+        <div class="rev-van-card__desc">Condições diferenciadas para revendedores credenciados, com preços de atacado e possibilidade de negociação por volume — permitindo margens atrativas para o seu negócio.</div>
+      </div>
+
+      <div class="rev-van-card">
+        <div class="rev-van-card__icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <div class="rev-van-card__title">Linha Completa de Produtos</div>
+        <div class="rev-van-card__desc">Do detector de entrada da linha ACE ao portal de segurança PD 6500i — portfólio completo para atender desde hobbyistas até grandes contratos corporativos.</div>
+      </div>
+
+      <div class="rev-van-card">
+        <div class="rev-van-card__icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <div class="rev-van-card__title">Atuação Regional</div>
+        <div class="rev-van-card__desc">Seja o parceiro de referência da Garrett na sua região. Oportunidade de atender clientes locais com a vantagem de proximidade, algo que a distribuição nacional não consegue oferecer.</div>
+      </div>
+
+      <div class="rev-van-card">
+        <div class="rev-van-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="rev-van-card__title">Garantia de Fábrica</div>
+        <div class="rev-van-card__desc">Todos os produtos são 100% originais com garantia oficial Garrett — zero risco de reclamação de falsificação. Você vende com confiança e o cliente compra com segurança.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     SEÇÃO 3 — PERFIL DESEJADO
+     ======================================================== -->
+<section class="rev-section" id="perfil">
+  <div class="container">
+
+    <div class="rev-section__head">
+      <span class="rev-section__label"><i class="fa-solid fa-users"></i> &nbsp;Perfil</span>
+      <h2 class="rev-section__title">Quem estamos<br /><span>procurando?</span></h2>
+      <p class="rev-section__subtitle">Buscamos parceiros que compartilhem do nosso compromisso com qualidade, atendimento e posicionamento de marca.</p>
+    </div>
+
+    <div class="rev-perfil">
+      <div>
+        <div class="rev-perfil__col-title">
+          <i class="fa-solid fa-check-circle"></i> Perfis que se encaixam
+        </div>
+        <div class="rev-check-list">
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--green"><i class="fa-solid fa-check"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Empresas de segurança patrimonial</strong>
+              Integradoras que atendem eventos, condomínios, shoppings, empresas e instituições públicas.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--green"><i class="fa-solid fa-check"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Lojas de equipamentos outdoor</strong>
+              Estabelecimentos especializados em esportes ao ar livre, aventura, caça ou esportes aquáticos.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--green"><i class="fa-solid fa-check"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Profissionais autônomos com carteira de clientes</strong>
+              Consultores técnicos ou representantes comerciais com atuação em segurança ou mineração.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--green"><i class="fa-solid fa-check"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Empresas de garimpo e mineração</strong>
+              Operadores que atendem garimpeiros, cooperativas e empresas do setor de mineração.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--green"><i class="fa-solid fa-check"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Lojas de detecção e numismática</strong>
+              Comerciantes especializados no público hobbyista de detectores, moedas e relíquias.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="rev-perfil__col-title">
+          <i class="fa-solid fa-star"></i> O que valorizamos nos parceiros
+        </div>
+        <div class="rev-check-list">
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--gold"><i class="fa-solid fa-handshake"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Compromisso com a marca</strong>
+              Alinhar o posicionamento às diretrizes Garrett — não misturar com produtos paralelos ou de procedência duvidosa.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--gold"><i class="fa-solid fa-headset"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Capacidade de atendimento</strong>
+              Estrutura para responder clientes, orientar tecnicamente e prestar pós-venda de qualidade.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--gold"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Presença regional</strong>
+              Atuação consolidada ou com potencial real de penetração no mercado local.
+            </div>
+          </div>
+          <div class="rev-check-item">
+            <div class="rev-check-item__icon rev-check-item__icon--gold"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="rev-check-item__text">
+              <strong>Visão de crescimento</strong>
+              Interesse em desenvolver o mercado local, não apenas em transações pontuais.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     SEÇÃO 4 — COMO FUNCIONA
+     ======================================================== -->
+<section class="rev-section rev-section--dark" id="como-funciona">
+  <div class="container">
+
+    <div class="rev-section__head">
+      <span class="rev-section__label"><i class="fa-solid fa-list-check"></i> &nbsp;Processo</span>
+      <h2 class="rev-section__title">Como funciona<br /><span>o credenciamento?</span></h2>
+      <p class="rev-section__subtitle">Processo simples, direto e rápido. Em menos de uma semana você já pode estar vendendo produtos Garrett na sua região.</p>
+    </div>
+
+    <div class="rev-steps">
+
+      <div class="rev-step">
+        <div class="rev-step__num">1</div>
+        <div class="rev-step__title">Entre em Contato</div>
+        <div class="rev-step__desc">Envie uma mensagem pelo WhatsApp apresentando seu perfil, região de atuação e interesse em revender produtos Garrett.</div>
+      </div>
+
+      <div class="rev-step">
+        <div class="rev-step__num">2</div>
+        <div class="rev-step__title">Conversa Comercial</div>
+        <div class="rev-step__desc">Nossa equipe comercial entra em contato para conhecer melhor o seu negócio, entender suas necessidades e apresentar as condições de revenda.</div>
+      </div>
+
+      <div class="rev-step">
+        <div class="rev-step__num">3</div>
+        <div class="rev-step__title">Análise e Aprovação</div>
+        <div class="rev-step__desc">Avaliamos o perfil do parceiro, alinhamento com a marca e potencial de mercado. A aprovação é ágil para parceiros que atendem os critérios.</div>
+      </div>
+
+      <div class="rev-step">
+        <div class="rev-step__num">4</div>
+        <div class="rev-step__title">Início das Vendas</div>
+        <div class="rev-step__desc">Com o credenciamento aprovado, você já pode começar a comercializar. Equipe de suporte disponível para auxiliar nos primeiros negócios.</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================================
+     CTA FINAL
+     ======================================================== -->
+<section class="rev-cta" id="cadastro">
+  <div class="container">
+    <div class="rev-cta__inner">
+      <div class="rev-cta__icon"><i class="fa-solid fa-handshake"></i></div>
+      <h2 class="rev-cta__title">Pronto para <span>crescer</span><br />com a Garrett?</h2>
+      <p class="rev-cta__desc">Entre em contato agora pelo WhatsApp e dê o primeiro passo para se tornar um revendedor autorizado Garrett Brasil. Nossa equipe responde em minutos.</p>
+      <div class="rev-cta__actions">
+        <a href="https://wa.me/message/J57ZJGDDI3CZA1?text=Ol%C3%A1!%20Tenho%20interesse%20em%20me%20tornar%20revendedor%20Garrett%20Brasil." target="_blank" rel="noopener" class="btn btn--wa btn--lg">
+          <i class="fa-brands fa-whatsapp"></i> Quero me tornar revendedor
+        </a>
+        <a href="index.html#contato" class="btn btn--ghost">
+          <i class="fa-solid fa-envelope"></i> Outras formas de contato
+        </a>
+      </div>
+      <div class="rev-cta__note">
+        <i class="fa-solid fa-circle-info"></i>
+        Respondemos em até 2 horas nos dias úteis
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <img src="img/garrett-logo.svg" alt="Garrett Brasil" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Distribuidora oficial Garrett no Brasil. Detectores de metal para esporte, segurança e garimpo com garantia e suporte técnico.</p>
+        <div class="footer__social">
+          <a href="#" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/message/J57ZJGDDI3CZA1" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com" title="YouTube" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Produtos</h4>
+        <div class="footer__links">
+          <a href="sport.html#ace-series">ACE Series</a>
+          <a href="sport.html#at-series">AT Series</a>
+          <a href="sport.html#ouro">Prospecção de Ouro</a>
+          <a href="seguranca.html#portais">Pórticos Walk-Through</a>
+          <a href="seguranca.html#handheld">Detectores Hand-Held</a>
+          <a href="acessorios.html#bobinas">Bobinas</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Empresa</h4>
+        <div class="footer__links">
+          <a href="index.html#sobre">Sobre Nós</a>
+          <a href="index.html#beneficios">Por que Garrett Brasil?</a>
+          <a href="blog.html">Blog</a>
+          <a href="revendedor.html">Seja um Revendedor</a>
+          <a href="index.html#contato">Contato</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contato</h4>
+        <div class="footer__contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span><a href="https://wa.me/message/J57ZJGDDI3CZA1" target="_blank" rel="noopener">+55 61 92003-3094</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:info@garrettbrasil.com.br">info@garrettbrasil.com.br</a></span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <span>garrettbrasil.com.br</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Brasília — DF, Brasil</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 Garrett Brasil. Distribuidora oficial Garrett no Brasil. Todos os direitos reservados.</p>
+      <div class="footer__bottom-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/message/J57ZJGDDI3CZA1?text=Ol%C3%A1!%20Tenho%20interesse%20em%20me%20tornar%20revendedor%20Garrett%20Brasil." target="_blank" rel="noopener" class="whatsapp-float" title="Falar via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+  <div class="whatsapp-float__label">
+    Fale Conosco
+    <small>Resposta rápida</small>
+  </div>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
