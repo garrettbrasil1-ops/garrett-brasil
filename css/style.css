@@ -275,7 +275,7 @@ button {
   white-space: nowrap;
 }
 .nav__cobrand-logo {
-  height: 30px;
+  height: 36px;        /* mesmo tamanho da logo Garrett */
   width: auto;
   display: block;
 }
@@ -283,10 +283,18 @@ button {
   .nav__brand { gap: 10px; }
   .nav__cobrand { padding-left: 10px; gap: 2px; }
   .nav__cobrand-eyebrow { font-size: 0.5rem; letter-spacing: 0.12em; }
-  .nav__cobrand-logo { height: 22px; }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .nav__cobrand-logo { height: 30px; }   /* acompanha a Garrett (30px) */
+}
+@media (max-width: 600px) {
+  /* telas estreitas: reduz a WhiteBox p/ o menu (hambúrguer) caber */
   .nav__cobrand-eyebrow { display: none; }
+  .nav__brand { gap: 8px; }
+  .nav__cobrand { padding-left: 8px; }
+  .nav__cobrand-logo { height: 24px; }
+}
+@media (max-width: 380px) {
   .nav__cobrand-logo { height: 20px; }
 }
 
