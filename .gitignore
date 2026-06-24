@@ -24,3 +24,5 @@ desktop.ini
 *.swo
 .vscode/
 .idea/
+
+*.bat
