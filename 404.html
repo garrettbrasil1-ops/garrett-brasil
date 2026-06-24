@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Página não encontrada — Garrett Brasil</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
   <style>
     .error-page {
       display: flex;
@@ -95,9 +95,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="img/garrett-logo.svg" alt="Garrett Brasil" />
-      </a>
+      <div style="display:flex;align-items:center;gap:14px;">
+        <a href="index.html" class="logo" aria-label="Garrett">
+          <img src="img/garrett-logo.svg" alt="Garrett" style="height:36px;width:auto;display:block;" />
+        </a>
+        <span style="display:flex;flex-direction:column;gap:3px;padding-left:14px;border-left:1px solid rgba(255,255,255,0.18);line-height:1;">
+          <span style="font-family:'Oxanium',sans-serif;font-size:0.56rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#b9b3aa;">Representante oficial</span>
+          <img src="img/whitebox-logo-dark.svg" alt="WhiteBox Segurança e Tecnologia" style="height:28px;width:auto;display:block;" />
+        </span>
+      </div>
     </div>
   </header>
 
@@ -115,7 +121,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Garrett Brasil. Todos os direitos reservados.</p>
+      <p>&copy; <span id="year"></span> WhiteBox Segurança &amp; Tecnologia — Representante Oficial Garrett Electronics (USA) no Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>

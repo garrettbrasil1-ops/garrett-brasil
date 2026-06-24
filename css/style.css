@@ -249,6 +249,47 @@ button {
   object-fit: contain;
 }
 
+/* Co-marca: Garrett + WhiteBox (Representante Oficial) */
+.nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.nav__cobrand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(255,255,255,0.18);
+  line-height: 1;
+}
+.nav__cobrand-eyebrow {
+  font-family: var(--font-head);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #b9b3aa;
+  white-space: nowrap;
+}
+.nav__cobrand-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 900px) {
+  .nav__brand { gap: 10px; }
+  .nav__cobrand { padding-left: 10px; gap: 2px; }
+  .nav__cobrand-eyebrow { font-size: 0.5rem; letter-spacing: 0.12em; }
+  .nav__cobrand-logo { height: 22px; }
+}
+@media (max-width: 480px) {
+  .nav__cobrand-eyebrow { display: none; }
+  .nav__cobrand-logo { height: 20px; }
+}
+
 /* Nav links */
 .nav__links {
   display: flex;
@@ -1520,6 +1561,18 @@ button {
   width: auto;
   display: block;
   object-fit: contain;
+}
+
+/* Rodapé: marca da empresa (WhiteBox) representante Garrett */
+.footer__wb-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+  margin-bottom: 16px;
+}
+.footer__rep {
+  color: #fff;
+  font-weight: 700;
 }
 
 .footer__tagline {
