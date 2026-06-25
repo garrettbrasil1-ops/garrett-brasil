@@ -275,28 +275,32 @@ button {
   white-space: nowrap;
 }
 .nav__cobrand-logo {
-  height: 48px;        /* destaque maior da WhiteBox */
   width: auto;
   display: block;
+}
+.nav__cobrand-logo--full {            /* nome "whitebox" grande e legível (desktop/tablet) */
+  height: 44px;
+}
+.nav__cobrand-logo--icon {            /* só o ícone (mobile) */
+  display: none;
+  height: 30px;
 }
 @media (max-width: 900px) {
   .nav__brand { gap: 12px; }
   .nav__cobrand { padding-left: 12px; gap: 1px; }
   .nav__cobrand-eyebrow { font-size: 0.5rem; letter-spacing: 0.12em; }
-  .nav__cobrand-logo { height: 42px; }
+  .nav__cobrand-logo--full { height: 38px; }
 }
 @media (max-width: 768px) {
-  .nav__cobrand-logo { height: 34px; }
+  .nav__cobrand-logo--full { height: 32px; }
 }
 @media (max-width: 600px) {
-  /* telas estreitas: reduz a WhiteBox p/ o menu (hambúrguer) caber */
+  /* telas estreitas: nome sai, fica só o ícone p/ o menu (hambúrguer) caber */
   .nav__cobrand-eyebrow { display: none; }
-  .nav__brand { gap: 8px; }
-  .nav__cobrand { padding-left: 8px; }
-  .nav__cobrand-logo { height: 26px; }
-}
-@media (max-width: 380px) {
-  .nav__cobrand-logo { height: 20px; }
+  .nav__brand { gap: 10px; }
+  .nav__cobrand { padding-left: 10px; }
+  .nav__cobrand-logo--full { display: none; }
+  .nav__cobrand-logo--icon { display: block; }
 }
 
 /* Nav links */
