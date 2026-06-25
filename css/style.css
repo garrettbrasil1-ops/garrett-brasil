@@ -1555,7 +1555,7 @@ button {
 
 .footer__top {
   display: grid;
-  grid-template-columns: 280px 1fr 1fr 1fr;
+  grid-template-columns: 320px 1fr 1fr 1fr;
   gap: 40px;
   padding-bottom: 48px;
   border-bottom: 1px solid var(--clr-border);
@@ -1578,14 +1578,14 @@ button {
 
 /* Rodapé: marca da empresa (WhiteBox) representante Garrett */
 .footer__wb-logo {
-  height: 64px;
+  height: 88px;
   width: auto;
   aspect-ratio: 1128 / 352;
   display: block;
   margin-bottom: 18px;
 }
 @media (max-width: 768px) {
-  .footer__wb-logo { height: 56px; }
+  .footer__wb-logo { height: 72px; }
 }
 .footer__rep {
   color: #fff;
